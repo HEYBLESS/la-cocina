@@ -113,5 +113,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Bobo",
+    "id": "bobo",
+    "bpm": 78,
+    "tono": "Gm",
+    "genero": "Reggaeton",
+    "tags": [
+      "old school",
+      "reggaeton"
+    ],
+    "audio": "audio/beats/BOBO_78_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
