@@ -21,6 +21,9 @@
     "bpm": 86,
     "tono": "Am",
     "genero": "Reggaetón",
+    "tags": [
+      "old school"
+    ],
     "audio": "audio/beats/como-antes.mp3",
     "fecha": "2026-11-09",
     "destacado": false,
