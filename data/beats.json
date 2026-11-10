@@ -27,6 +27,7 @@
       "hip hop"
     ],
     "audio": "audio/beats/como-antes.mp3",
+    "portada": "img/beats/PORTADA-2.png",
     "fecha": "2026-11-09",
     "destacado": false,
     "vendido": false
@@ -38,9 +39,11 @@
     "tono": "Em",
     "genero": "Reggaetón",
     "tags": [
-      "old school"
+      "old school",
+      "reggaeton"
     ],
     "audio": "audio/beats/santa-pero-diabla.mp3",
+    "portada": "img/beats/PORTADA-4.png",
     "fecha": "2026-11-08",
     "destacado": false,
     "vendido": false
@@ -49,11 +52,14 @@
     "nombre": "Romantikstyle",
     "id": "romantikstyle",
     "bpm": 75,
+    "tono": "Bbm",
     "genero": "Reggaetón",
     "tags": [
-      "romántico"
+      "romántico",
+      "old school"
     ],
     "audio": "audio/beats/romantikstyle.mp3",
+    "portada": "img/beats/PORTADA-3.png",
     "fecha": "2026-11-07",
     "destacado": false,
     "vendido": false
