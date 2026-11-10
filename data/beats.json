@@ -35,7 +35,11 @@
     "nombre": "Santa Pero Diabla",
     "id": "santa-pero-diabla",
     "bpm": 80,
+    "tono": "Em",
     "genero": "Reggaetón",
+    "tags": [
+      "old school"
+    ],
     "audio": "audio/beats/santa-pero-diabla.mp3",
     "fecha": "2026-11-08",
     "destacado": false,
