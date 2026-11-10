@@ -97,5 +97,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Bajo Tus Efectos",
+    "id": "bajo-tus-efectos",
+    "bpm": 130,
+    "tono": "Ebm",
+    "genero": "Afrobeat",
+    "tags": [
+      "afrobeat",
+      "afro"
+    ],
+    "audio": "audio/beats/BAJO TUS EFECTOS_130BPM_Ebm (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
