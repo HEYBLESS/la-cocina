@@ -60,9 +60,8 @@ content:
         description: "Ej. A menor. Puedes dejarlo vacío."
       - name: genero
         label: Género
-        type: select
-        options:
-          values: [Reggaetón, Reggaetón Old School, Underground, Dembow, Suavetón, Afrobeat, Dancehall, Trap, R&B, Pop]
+        type: string
+        description: "Escribe el que quieras. Usados hasta ahora: Reggaetón, Reggaetón Old School, Underground, Dembow, Suavetón, Afrobeat, Dancehall, Trap, R&B, Pop. Escríbelo siempre igual (con tildes y mayúsculas) para que no se dupliquen los filtros."
       - name: tags
         label: Tags
         type: string
