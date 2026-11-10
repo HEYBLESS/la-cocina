@@ -63,5 +63,21 @@
     "fecha": "2026-11-07",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "En Nota",
+    "id": "en-nota",
+    "bpm": 83,
+    "tono": "Gm",
+    "genero": "Reggaeton",
+    "tags": [
+      "old school",
+      "reggaeton"
+    ],
+    "audio": "audio/beats/EN NOTA_83 BPM_TAG (la cocina).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
