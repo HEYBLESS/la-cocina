@@ -196,5 +196,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Conmigo Te Portas Mal",
+    "bpm": 80,
+    "tono": "Abm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school",
+      "lento"
+    ],
+    "audio": "audio/beats/CONMIGO TE PORTAS MAL_80BPM (TAG) (PROD. HEY BLESS!).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
