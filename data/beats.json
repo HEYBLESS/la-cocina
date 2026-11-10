@@ -4,7 +4,7 @@
     "id": "gatas-sandungueras",
     "bpm": 94,
     "tono": "Em",
-    "genero": "Reggaetón",
+    "genero": "Reggaetón ",
     "tags": [
       "reggaeton",
       "old school",
@@ -20,9 +20,10 @@
     "id": "como-antes",
     "bpm": 86,
     "tono": "Am",
-    "genero": "Reggaetón",
+    "genero": "Hip Hop",
     "tags": [
-      "old school"
+      "old school",
+      "reggaeton"
     ],
     "audio": "audio/beats/como-antes.mp3",
     "fecha": "2026-11-09",
