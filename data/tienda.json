@@ -1,0 +1,280 @@
+{
+  "redes": {
+    "instagram": "prod.bless",
+    "whatsapp": "51980683847",
+    "spotify": "https://open.spotify.com/intl-es/artist/26WHBQSJBRXWd3pRFQtYVy",
+    "youtube": "https://www.youtube.com/@HEYBLESS"
+  },
+  "pagos": {
+    "paypal": "https://paypal.me/HEYBLESS",
+    "comisionPorcentaje": 0.054,
+    "comisionFija": 0.3,
+    "tipoCambioRespaldo": 3.8
+  },
+  "promo": {
+    "activa": true,
+    "titulo": "2x1 en Exclusivas",
+    "lema": "Pide una exclusiva y el segundo plato va por cuenta de la casa.",
+    "detalle": "Compra la Licencia Exclusiva de un beat y elige otro beat del catálogo, también en exclusiva, gratis."
+  },
+  "licencias": [
+    {
+      "id": "basica",
+      "nombre": "Licencia Básica",
+      "precio": 25,
+      "archivos": [
+        "mp3"
+      ],
+      "stems": false,
+      "exclusiva": false,
+      "incluye": [
+        "Solo MP3",
+        "Grabar y subir a YouTube o SoundCloud",
+        "Hasta 2.000 streams",
+        "Dar crédito a \"HEY BLESS!\"",
+        "Licencia de uso (renovable)",
+        "No monetizable"
+      ],
+      "ideal": "Demo o testear"
+    },
+    {
+      "id": "premium",
+      "nombre": "Licencia Premium",
+      "precio": 40,
+      "archivos": [
+        "mp3",
+        "wav"
+      ],
+      "stems": false,
+      "exclusiva": false,
+      "incluye": [
+        "MP3 + WAV",
+        "Subir a Spotify, Apple, etc.",
+        "Hasta 10.000 streams",
+        "Dar crédito a \"HEY BLESS!\"",
+        "Licencia de uso (renovable)",
+        "Monetizable"
+      ],
+      "ideal": "Single formal"
+    },
+    {
+      "id": "premiumplus",
+      "nombre": "Licencia Premium+",
+      "precio": 70,
+      "archivos": [
+        "mp3",
+        "wav"
+      ],
+      "stems": true,
+      "exclusiva": false,
+      "incluye": [
+        "MP3 + WAV",
+        "Stems (multitrack)",
+        "Subir a Spotify, Apple, etc.",
+        "Hasta 10.000 streams",
+        "Dar crédito a \"HEY BLESS!\"",
+        "Licencia de uso (renovable)",
+        "Monetizable"
+      ],
+      "ideal": "Mix / Master"
+    },
+    {
+      "id": "exclusiva",
+      "nombre": "Exclusiva",
+      "precio": 130,
+      "archivos": [
+        "mp3",
+        "wav"
+      ],
+      "stems": true,
+      "exclusiva": true,
+      "incluye": [
+        "MP3 + WAV",
+        "Stems (multitrack)",
+        "Streams ilimitados en todas las plataformas",
+        "Única venta",
+        "Monetizable",
+        "Content ID",
+        "Licencia de por vida",
+        "Licencia de uso exclusivo"
+      ],
+      "ideal": "Proyectos sólidos, labels / managers"
+    }
+  ],
+  "personalizado": {
+    "desde": 150,
+    "incluye": [
+      "MP3 / WAV / Stems",
+      "Streams ilimitados",
+      "Monetizable",
+      "Content ID",
+      "Licencia de por vida",
+      "Licencia de uso exclusivo",
+      "2 a 3 revisiones"
+    ]
+  },
+  "trabajos": [
+    {
+      "titulo": "No Molestar",
+      "artista": "Darcell ft. HEY BLESS!",
+      "portada": "img/trabajos/no-molestar.jpg",
+      "audio": "audio/trabajos/no-molestar.mp3"
+    },
+    {
+      "titulo": "Ac-Sina",
+      "artista": "Teibe ft. HEY BLESS!",
+      "portada": "img/trabajos/ac-sina.jpg",
+      "audio": "audio/trabajos/ac-sina.mp3"
+    },
+    {
+      "titulo": "Cuando y Dónde",
+      "artista": "Hans Bent ft. HEY BLESS!",
+      "portada": "img/trabajos/cuando-y-donde.jpg",
+      "audio": "audio/trabajos/cuando-y-donde.mp3"
+    },
+    {
+      "titulo": "Ojos de Miel",
+      "artista": "Bastti",
+      "portada": "img/trabajos/ojos-de-miel.jpg",
+      "audio": "audio/trabajos/ojos-de-miel.mp3"
+    }
+  ],
+  "mixmaster": {
+    "desde": 50,
+    "descripcion": "Tu canción con el balance, la claridad y el volumen de un lanzamiento profesional. El precio puede variar según la cantidad de artistas o voces adicionales.",
+    "incluye": [
+      "Mezcla & master de 1 canción",
+      "Hasta 3 revisiones",
+      "Entrega en 2 a 3 días",
+      "Master en WAV + FLAC",
+      "Envío por WeTransfer o correo",
+      "Crédito: Beat & Mix HEY BLESS!"
+    ],
+    "trabajos": [
+      {
+        "titulo": "Awa de Calzón",
+        "artista": "Tnz & HEY BLESS!",
+        "portada": "img/trabajos/awa-de-calzon.jpg",
+        "audio": "audio/trabajos/awa-de-calzon.mp3"
+      },
+      {
+        "titulo": "SLID3",
+        "artista": "OMNIR3D",
+        "portada": "img/trabajos/slid3.jpg",
+        "audio": "audio/trabajos/slid3.mp3"
+      },
+      {
+        "titulo": "Solo una vez",
+        "artista": "Greidy Pierre From Callao",
+        "portada": "img/trabajos/solo-una-vez.jpg",
+        "audio": "audio/trabajos/solo-una-vez.mp3"
+      },
+      {
+        "titulo": "No Molestar",
+        "artista": "Darcell ft. HEY BLESS!",
+        "portada": "img/trabajos/no-molestar.jpg",
+        "audio": "audio/trabajos/no-molestar.mp3"
+      }
+    ]
+  },
+  "resenas": [
+    {
+      "nombre": "Bastti",
+      "usuario": "basttimusic",
+      "verificado": true,
+      "texto": "Trabajo con HEY BLESS! desde 2023 y su ética de trabajo es impecable. Tiene un sonido único, pero también una versatilidad increíble para adaptarse a distintos géneros y a la visión de cada artista. Hemos trabajado juntos en pop, reguetón, house y R&B, incluyendo un álbum completo en el que captó perfectamente la esencia que buscaba. Nuestra colaboración ha dado como resultado un catálogo que supera los 2 millones de reproducciones. Sin duda, un productor con muchísimo talento, creatividad y compromiso con la calidad."
+    },
+    {
+      "nombre": "Renzo Rettis",
+      "usuario": "rettisz",
+      "verificado": false,
+      "texto": "Bastante profesional y preciso con los tiempos. Trabajar con HEY BLESS! me da una confianza que, aunque no lo debería, es rara de hallar dentro del panorama musical."
+    },
+    {
+      "nombre": "Vincez",
+      "usuario": "vincez",
+      "verificado": true,
+      "texto": "Siempre un gusto trabajar contigo, rey. Profesional 100% y entregas el tema a tiempo. ¡El beat siempre exótico!"
+    },
+    {
+      "nombre": "Teibe",
+      "usuario": "elteibe",
+      "verificado": false,
+      "texto": "Eres el mejor, hermanito. Agradecido con Dios por haberme mostrado tu perfil de IG y haberte conocido como persona 🫂🥷"
+    }
+  ],
+  "pasos": [
+    {
+      "titulo": "Escucha y elige",
+      "texto": "Dale play a los beats y elige la licencia que va con tu proyecto.",
+      "etiqueta": ""
+    },
+    {
+      "titulo": "Paga con PayPal",
+      "texto": "Deja tu nombre y tu correo, y paga con PayPal. ¿Quieres pagar en soles? Escríbeme por Instagram.",
+      "etiqueta": ""
+    },
+    {
+      "titulo": "¡Listo!",
+      "texto": "Confirmado tu pago, tus archivos WAV y MP3 sin tag y tu licencia a tu nombre te llegan automáticamente a tu correo.",
+      "etiqueta": ""
+    },
+    {
+      "titulo": "Avísame por IG",
+      "texto": "Escríbeme por Instagram y recibe tus stems en minutos.",
+      "etiqueta": "Solo si incluye stems"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cómo recibo mi beat?",
+      "respuesta": "Apenas se confirma tu pago te llegan a tu correo tus archivos (MP3 / WAV sin tag) y tu licencia en PDF con tu nombre y los datos de tu compra."
+    },
+    {
+      "pregunta": "¿Puedo pagar en soles?",
+      "respuesta": "Sí. Escríbeme por Instagram a @prod.bless o por WhatsApp al +51 980 683 847 con el beat y la licencia que quieres, y te paso los datos para pagar en soles."
+    },
+    {
+      "pregunta": "¿Cómo funciona el 2x1 en exclusivas?",
+      "respuesta": "Al elegir la Licencia Exclusiva de un beat, eliges otro beat del catálogo de regalo. Recibes los dos en exclusiva, cada uno con su licencia a tu nombre, y ambos salen del catálogo."
+    },
+    {
+      "pregunta": "¿Y los stems?",
+      "respuesta": "Si tu licencia incluye stems (Premium+ o Exclusiva), escríbeme por Instagram con tu código de pedido y te los envío en minutos."
+    },
+    {
+      "pregunta": "¿Por qué el total con PayPal es un poco mayor?",
+      "respuesta": "PayPal cobra una comisión por cada pago. Al momento de pagar verás el desglose."
+    },
+    {
+      "pregunta": "¿Cómo doy crédito?",
+      "respuesta": "En el título o la descripción de tu canción: (Prod. HEY BLESS!). Es obligatorio en las licencias Básica, Premium y Premium+."
+    },
+    {
+      "pregunta": "¿Qué pasa si alguien compra la exclusiva?",
+      "respuesta": "El beat sale del catálogo y nadie más puede comprarlo. Las licencias no exclusivas vendidas antes siguen siendo válidas según sus términos."
+    }
+  ],
+  "faqKits": [
+    {
+      "pregunta": "¿Cómo recibo el kit?",
+      "respuesta": "Apenas se confirma tu pago con PayPal te llega el link de descarga del kit a tu correo."
+    },
+    {
+      "pregunta": "¿Puedo usar los sonidos en canciones comerciales?",
+      "respuesta": "Sí. Son 100% libres de regalías: úsalos en tus beats y canciones, en plataformas, YouTube o donde quieras, sin pagar extra."
+    },
+    {
+      "pregunta": "¿Puedo revender o compartir el kit?",
+      "respuesta": "No. No está permitido revender, compartir ni redistribuir los sonidos, sueltos o dentro de otro kit."
+    },
+    {
+      "pregunta": "¿Funciona en mi DAW?",
+      "respuesta": "Sí. Son archivos WAV: funcionan en FL Studio, Ableton, Logic, Reaper y cualquier DAW o sampler."
+    },
+    {
+      "pregunta": "¿Puedo pagar en soles?",
+      "respuesta": "Sí. Escríbeme por Instagram a @prod.bless y te paso los datos para pagar en soles."
+    }
+  ]
+}
