@@ -212,5 +212,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Traversuras",
+    "bpm": 80,
+    "tono": "Bm",
+    "genero": "Suaveton",
+    "tags": [
+      "suaveton",
+      "reggaeton",
+      "lento"
+    ],
+    "audio": "audio/beats/TRAVERSURAS_80BPM_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
