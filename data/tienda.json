@@ -1,16 +1,4 @@
 {
-  "redes": {
-    "instagram": "prod.bless",
-    "whatsapp": "51980683847",
-    "spotify": "https://open.spotify.com/intl-es/artist/26WHBQSJBRXWd3pRFQtYVy",
-    "youtube": "https://www.youtube.com/@HEYBLESS"
-  },
-  "pagos": {
-    "paypal": "https://paypal.me/HEYBLESS",
-    "comisionPorcentaje": 0.054,
-    "comisionFija": 0.3,
-    "tipoCambioRespaldo": 3.8
-  },
   "promo": {
     "activa": true,
     "titulo": "2x1 en Exclusivas",
@@ -201,23 +189,26 @@
       "usuario": "elteibe",
       "verificado": false,
       "texto": "Eres el mejor, hermanito. Agradecido con Dios por haberme mostrado tu perfil de IG y haberte conocido como persona 🫂🥷"
+    },
+    {
+      "nombre": "Hans Brent",
+      "usuario": "hansbrent_",
+      "verificado": false,
+      "texto": "Hermano muy épico trabajar contigo, entiendes la visión del artista y aportas bastante a su sonido. Logras captar la vibra a la cual debe ir el proyecto y te sumerges con todo. Trabajas rápido y el resultado es increíble hermano. También algo importante es que generas confianza mi brou!! así la otra persona puede conversar tranquilo y lograr una comunicación que ayude a armar bien el proyecto. Nos fuiiii!!"
     }
   ],
   "pasos": [
     {
       "titulo": "Escucha y elige",
-      "texto": "Dale play a los beats y elige la licencia que va con tu proyecto.",
-      "etiqueta": ""
+      "texto": "Dale play a los beats y elige la licencia que va con tu proyecto."
     },
     {
       "titulo": "Paga con PayPal",
-      "texto": "Deja tu nombre y tu correo, y paga con PayPal. ¿Quieres pagar en soles? Escríbeme por Instagram.",
-      "etiqueta": ""
+      "texto": "Deja tu nombre y tu correo, y paga con PayPal. ¿Quieres pagar en soles? Escríbeme por Instagram."
     },
     {
       "titulo": "¡Listo!",
-      "texto": "Confirmado tu pago, tus archivos WAV y MP3 sin tag y tu licencia a tu nombre te llegan automáticamente a tu correo.",
-      "etiqueta": ""
+      "texto": "Confirmado tu pago, tus archivos WAV y MP3 sin tag y tu licencia a tu nombre te llegan automáticamente a tu correo."
     },
     {
       "titulo": "Avísame por IG",
@@ -276,5 +267,17 @@
       "pregunta": "¿Puedo pagar en soles?",
       "respuesta": "Sí. Escríbeme por Instagram a @prod.bless y te paso los datos para pagar en soles."
     }
-  ]
+  ],
+  "redes": {
+    "instagram": "prod.bless",
+    "whatsapp": "51980683847",
+    "spotify": "https://open.spotify.com/intl-es/artist/26WHBQSJBRXWd3pRFQtYVy",
+    "youtube": "https://www.youtube.com/@HEYBLESS"
+  },
+  "pagos": {
+    "paypal": "https://paypal.me/HEYBLESS",
+    "comisionPorcentaje": 0.054,
+    "comisionFija": 0.3,
+    "tipoCambioRespaldo": 3.8
+  }
 }
