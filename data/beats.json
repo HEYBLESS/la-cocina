@@ -3,14 +3,13 @@
     "nombre": "Gatas Sandungueras",
     "id": "gatas-sandungueras",
     "bpm": 95,
-    "tono": "",
+    "tono": "Em",
     "genero": "Reggaetón",
     "tags": [
-      "sandungueo",
-      "perreo"
+      "reggaeton",
+      "old school"
     ],
     "audio": "audio/beats/gatas-sandungueras.mp3",
-    "portada": "",
     "fecha": "2026-11-10",
     "destacado": true,
     "vendido": false
@@ -21,9 +20,7 @@
     "bpm": 86,
     "tono": "A menor",
     "genero": "Reggaetón",
-    "tags": [],
     "audio": "audio/beats/como-antes.mp3",
-    "portada": "",
     "fecha": "2026-11-09",
     "destacado": false,
     "vendido": false
@@ -32,11 +29,8 @@
     "nombre": "Santa Pero Diabla",
     "id": "santa-pero-diabla",
     "bpm": 80,
-    "tono": "",
     "genero": "Reggaetón",
-    "tags": [],
     "audio": "audio/beats/santa-pero-diabla.mp3",
-    "portada": "",
     "fecha": "2026-11-08",
     "destacado": false,
     "vendido": false
@@ -45,13 +39,11 @@
     "nombre": "Romantikstyle",
     "id": "romantikstyle",
     "bpm": 75,
-    "tono": "",
     "genero": "Reggaetón",
     "tags": [
       "romántico"
     ],
     "audio": "audio/beats/romantikstyle.mp3",
-    "portada": "",
     "fecha": "2026-11-07",
     "destacado": false,
     "vendido": false
