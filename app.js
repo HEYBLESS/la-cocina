@@ -1,6 +1,26 @@
-/* HEY BLESS! — lógica de la tienda (no necesitas editar este archivo) */
-(() => {
-const C = window.CONFIG;
+/* HEY BLESS! — lógica de la tienda (no necesitas editar este archivo)
+   Los datos se leen de data/tienda.json, data/beats.json y data/kits.json (se editan en Pages CMS) */
+(async () => {
+const loadJSON = p => fetch(p + "?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
+const [TIENDA, BEATS_JSON, KITS_JSON] = await Promise.all([loadJSON("data/tienda.json"), loadJSON("data/beats.json"), loadJSON("data/kits.json")]);
+const T = TIENDA || {};
+const slug = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const asset = p => { if (!p) return ""; p = String(p).replace(/^\/+/, ""); if (/^https?:/i.test(p)) return p; try { return encodeURI(decodeURI(p)); } catch { return encodeURI(p); } };
+const P = T.pagos || {};
+const C = Object.assign({ comisionPorcentaje: 0.054, comisionFija: 0.30, tipoCambioRespaldo: 3.8 }, window.CONFIG_TECNICO || {}, T.redes || {}, P, {
+  licencias: (T.licencias || []).map(l => ({ ...l, precio: +l.precio, archivos: [].concat(l.archivos || ["mp3"]).map(a => String(a).toLowerCase()), incluye: l.incluye || [] })),
+  promo: T.promo, personalizado: T.personalizado || { desde: 0, incluye: [] },
+  trabajos: (T.trabajos || []).map(w => ({ ...w, audio: asset(w.audio), portada: asset(w.portada) })),
+  mixmaster: Object.assign({ incluye: [], trabajos: [] }, T.mixmaster || {}),
+  resenas: T.resenas || [], pasos: T.pasos || [], faq: T.faq || [], faqKits: T.faqKits || []
+});
+C.comisionPorcentaje = +C.comisionPorcentaje; C.comisionFija = +C.comisionFija; C.tipoCambioRespaldo = +C.tipoCambioRespaldo;
+C.mixmaster.trabajos = (C.mixmaster.trabajos || []).map(w => ({ ...w, audio: asset(w.audio), portada: asset(w.portada) }));
+window.CONFIG = C;
+window.BEATS = (BEATS_JSON || []).filter(b => b && b.nombre).map(b => ({ ...b, id: b.id || slug(b.nombre), bpm: b.bpm ? +b.bpm : "", tags: (b.tags || []).filter(Boolean), audio: asset(b.audio), portada: asset(b.portada) }));
+window.KITS = (KITS_JSON || []).filter(k => k && k.nombre).map(k => ({ ...k, id: k.id || slug(k.nombre), precio: +k.precio, portada: asset(k.portada),
+  artes: (k.artes || []).map(asset).filter(Boolean), demos: (k.demos || []).map(d => ({ ...d, audio: asset(d.audio) })),
+  specs: (k.specs || []).map(x => Array.isArray(x) ? x : [x.etiqueta, x.valor]) }));
 const PAGE = document.body.dataset.page;
 const ALL_BEATS = (window.BEATS || []).map((b, i) => ({ ...b, key: "b" + i, id: b.id || "beat-" + i }));
 const BEATS = ALL_BEATS.filter(b => !b.vendido);   // la exclusiva vendida desaparece del catálogo
@@ -111,7 +131,7 @@ function seek(e, el) {
 
 /* ---------- BEATS PAGE ---------- */
 function renderFeatured() {
-  const b = BEATS[0];
+  const b = BEATS.find(x => x.destacado) || BEATS[0];
   if (!b) { $("#featured").innerHTML = '<div class="empty">Pronto nuevos beats.</div>'; return; }
   $("#featured").innerHTML = `<span class="caps tag-top blk">Destacado</span>
     <div class="feat-top">${cover(b)}<div style="min-width:0"><h2>${esc(b.nombre)}</h2>
@@ -187,13 +207,22 @@ function renderMix() {
       <div class="script">Mezcla<br>&amp; Master</div>
       <div class="pill" style="cursor:default">Tu canción lista para sonar</div>
       <p>${esc(M.descripcion)}</p>
-      <p class="desde">${M.desde ? `Desde <b>${usd(M.desde)}</b> USD` : "Cotiza tu proyecto según el número de pistas."}</p>
+      <p class="desde">${+M.desde ? `Desde <b>${usd(+M.desde)}</b> USD` : "Cotiza tu proyecto según el número de pistas."}</p>
       <div style="margin-top:16px">${igPill("Cotizar por Instagram")}</div>
     </div>
     <div class="inc" style="padding-top:8px"><h3>INCLUYE</h3><ul>${M.incluye.map(i => `<li>${esc(i)}</li>`).join("")}</ul>
       ${MIXW.length ? `<div class="works"><h3>TRABAJOS MÍOS</h3>${MIXW.map(workRow).join("")}</div>` : ""}</div>`;
 }
 
+function renderPasos() {
+  const el = $("#pasos"); if (!el) return;
+  el.innerHTML = (C.pasos || []).map((p, i) => `<div class="frame step peek"><div class="n">${i + 1}</div>${p.etiqueta ? `<span class="opt-tag">${esc(p.etiqueta)}</span>` : ""}<h3>${esc(p.titulo)}</h3><p>${esc(p.texto)}</p></div>`).join("");
+}
+function renderFaq(list) {
+  const el = $("#faq-list"); if (!el) return;
+  el.innerHTML = (list || []).map(f => `<details><summary>${esc(f.pregunta)}</summary><p>${esc(f.respuesta)}</p></details>`).join("");
+  $("#faq").style.display = (list || []).length ? "" : "none";
+}
 function renderReviews() {
   const el = $("#resenas-grid"); if (!el) return;
   const R2 = C.resenas || [];
@@ -511,10 +540,10 @@ $$(".wa-num").forEach(e => e.textContent = waPretty());
 $("#yr").textContent = new Date().getFullYear();
 $("#p-play").innerHTML = ring() + ICON.play; $("#p-play").dataset.play = ""; $("#p-wave").dataset.wave = "";
 if (PAGE === "beats") {
-  renderChips(); renderFeatured(); renderList(); renderPromo(); renderLicenses(); renderCustom(); renderMix(); renderReviews();
+  renderChips(); renderFeatured(); renderList(); renderPromo(); renderLicenses(); renderCustom(); renderMix(); renderReviews(); renderPasos(); renderFaq(C.faq);
   $("#q").addEventListener("input", renderList); $("#sort").addEventListener("change", renderList);
 } else if (PAGE === "kits") {
-  renderKits();
+  renderKits(); renderFaq(C.faqKits);
   if (KITS.length === 1) { $("#kits").style.display = "none"; if (!location.hash) showKit(KITS[0].id); }
 }
 sync(); route();

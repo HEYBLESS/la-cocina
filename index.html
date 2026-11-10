@@ -93,12 +93,7 @@
   <div class="wrap">
     <h2 class="title">Cómo comprar</h2>
     <div class="orn"><span>✦</span></div>
-    <div class="steps">
-      <div class="frame step peek"><div class="n">1</div><h3>Escucha y elige</h3><p>Dale play a los beats y elige la licencia que va con tu proyecto.</p></div>
-      <div class="frame step peek"><div class="n">2</div><h3>Paga con PayPal</h3><p>Deja tu nombre y tu correo, y paga con PayPal. ¿Quieres pagar en soles? Escríbeme por Instagram.</p></div>
-      <div class="frame step peek"><div class="n">3</div><h3>¡Listo!</h3><p>Confirmado tu pago, tus archivos WAV y MP3 sin tag y tu licencia a tu nombre te llegan automáticamente a tu correo.</p></div>
-      <div class="frame step peek"><div class="n">4</div><span class="opt-tag">Solo si incluye stems</span><h3>Avísame por IG</h3><p>Escríbeme a <b class="ig-handle"></b> y recibe tus stems en minutos.</p></div>
-    </div>
+    <div class="steps" id="pasos"></div>
   </div>
 </section>
 
@@ -106,15 +101,7 @@
   <div class="wrap">
     <h2 class="title">Preguntas frecuentes</h2>
     <div class="orn"><span>✦</span></div>
-    <div class="frame faq peek">
-      <details><summary>¿Cómo recibo mi beat?</summary><p>Apenas se confirma tu pago te llegan a tu correo tus archivos (MP3 / WAV sin tag) y tu licencia en PDF con tu nombre y los datos de tu compra.</p></details>
-      <details><summary>¿Puedo pagar en soles?</summary><p>Sí. Escríbeme por Instagram a <b class="ig-handle"></b> o por WhatsApp al <b class="wa-num"></b> con el beat y la licencia que quieres, y te paso los datos para pagar en soles.</p></details>
-      <details><summary>¿Cómo funciona el 2x1 en exclusivas?</summary><p>Al elegir la Licencia Exclusiva de un beat, eliges otro beat del catálogo de regalo. Recibes los dos en exclusiva, cada uno con su licencia a tu nombre, y ambos salen del catálogo.</p></details>
-      <details><summary>¿Y los stems?</summary><p>Si tu licencia incluye stems (Premium+ o Exclusiva), escríbeme por Instagram con tu código de pedido y te los envío en minutos.</p></details>
-      <details><summary>¿Por qué el total con PayPal es un poco mayor?</summary><p>PayPal cobra una comisión por cada pago. Al momento de pagar verás el desglose.</p></details>
-      <details><summary>¿Cómo doy crédito?</summary><p>En el título o la descripción de tu canción: <b>(Prod. HEY BLESS!)</b>. Es obligatorio en las licencias Básica, Premium y Premium+.</p></details>
-      <details><summary>¿Qué pasa si alguien compra la exclusiva?</summary><p>El beat sale del catálogo y nadie más puede comprarlo. Las licencias no exclusivas vendidas antes siguen siendo válidas según sus términos.</p></details>
-    </div>
+    <div class="frame faq peek" id="faq-list"></div>
   </div>
 </section>
 
@@ -141,8 +128,6 @@
 <audio id="audio" preload="none"></audio>
 
 <script src="config.js"></script>
-<script src="beats.js"></script>
-<script src="kits.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
