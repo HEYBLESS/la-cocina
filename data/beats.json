@@ -146,5 +146,22 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Condena",
+    "id": "condena",
+    "bpm": 87,
+    "tono": "Cm",
+    "genero": "Suaveton",
+    "tags": [
+      "suaveton",
+      "reggaeton",
+      "lento"
+    ],
+    "audio": "audio/beats/CONDENA_ 87BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
