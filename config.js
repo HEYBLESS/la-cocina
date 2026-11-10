@@ -10,7 +10,7 @@ window.CONFIG = {
   // Entrega automática (ver GUIA-ENTREGA-AUTOMATICA.txt).
   // Vacío = modo manual (el cliente te avisa por Instagram).
   // Con la URL = el pedido te llega por correo con un botón "APROBAR Y ENVIAR".
-  backend: "",          // URL de tu Apps Script (termina en /exec)
+  backend: "https://script.google.com/macros/s/AKfycbx1FtCSJnPk4bjAwgb4NdcUsAhXYqoTyePgLf5YIXghhJSfFz5Cg3ZBhDx_0oDfWQc/exec",          // URL de tu Apps Script (termina en /exec)
   paypalClientId: "",   // déjalo vacío (no se usa)
 
   // PayPal.me (respaldo / modo manual)
