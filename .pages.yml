@@ -1,0 +1,402 @@
+# Panel de La Cocina (Pages CMS) — https://app.pagescms.org
+# Define los formularios para editar la tienda sin tocar código.
+
+media:
+  - name: previews
+    label: Previews de beats (MP3 con tag)
+    input: audio/beats
+    output: audio/beats
+    categories: [audio]
+  - name: portadas
+    label: Portadas de beats
+    input: img/beats
+    output: img/beats
+    categories: [image]
+  - name: trabajos_audio
+    label: Audios de trabajos
+    input: audio/trabajos
+    output: audio/trabajos
+    categories: [audio]
+  - name: trabajos_img
+    label: Portadas de trabajos
+    input: img/trabajos
+    output: img/trabajos
+    categories: [image]
+  - name: kits_img
+    label: Imágenes de drum kits
+    input: img/kits
+    output: img/kits
+    categories: [image]
+  - name: kits_audio
+    label: Muestras de drum kits
+    input: audio/kit
+    output: audio/kit
+    categories: [audio]
+
+content:
+  # ---------------------------------------------------------------- BEATS
+  - name: beats
+    label: Beats
+    type: file
+    path: data/beats.json
+    format: json
+    list: true
+    fields:
+      - name: nombre
+        label: Nombre del beat
+        type: string
+        required: true
+        description: "Tal cual aparece en la tienda. Tus MP3 y WAV sin tag en Drive › BEATS deben contener este nombre + NOTAG."
+      - name: id
+        label: ID para el link (opcional)
+        type: string
+        description: "Déjalo vacío y se crea solo a partir del nombre (ej. Noche de Perreo → noche-de-perreo). No lo cambies si ya compartiste el link."
+      - name: bpm
+        label: BPM
+        type: number
+      - name: tono
+        label: Tonalidad
+        type: string
+        description: "Ej. A menor. Puedes dejarlo vacío."
+      - name: genero
+        label: Género
+        type: select
+        options:
+          values: [Reggaetón, Reggaetón Old School, Underground, Dembow, Suavetón, Afrobeat, Dancehall, Trap, R&B, Pop]
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: audio
+        label: Preview MP3 (con tag)
+        type: file
+        required: true
+        options:
+          media: previews
+      - name: portada
+        label: Portada (cuadrada, opcional)
+        type: image
+        options:
+          media: portadas
+      - name: fecha
+        label: Fecha de subida
+        type: date
+      - name: destacado
+        label: Destacado en la portada
+        type: boolean
+        description: "Si marcas varios, se usa el primero de la lista."
+      - name: vendido
+        label: Exclusiva vendida (lo quita de la tienda)
+        type: boolean
+
+  # ---------------------------------------------------------------- DRUM KITS
+  - name: kits
+    label: Drum Kits
+    type: file
+    path: data/kits.json
+    format: json
+    list: true
+    fields:
+      - name: nombre
+        label: Nombre del kit
+        type: string
+        required: true
+        description: "El .rar o .zip en Drive › DRUMKIT debe contener este nombre."
+      - name: id
+        label: ID para el link (opcional)
+        type: string
+      - name: precio
+        label: Precio (USD)
+        type: number
+      - name: precioSoles
+        label: Precio en soles (opcional)
+        type: number
+      - name: portada
+        label: Portada
+        type: image
+        options:
+          media: kits_img
+      - name: artes
+        label: Más artes (galería)
+        type: image
+        options:
+          media: kits_img
+          multiple:
+            max: 8
+      - name: fecha
+        label: Fecha
+        type: date
+      - name: descripcion
+        label: Descripción
+        type: text
+      - name: preparacion
+        label: Preparación
+        type: text
+      - name: referentes
+        label: Inspirado en (artistas)
+        type: string
+        list: true
+      - name: contenido
+        label: Contenido (ingredientes)
+        type: object
+        list: true
+        fields:
+          - name: tipo
+            label: Tipo de sonido
+            type: string
+          - name: cantidad
+            label: Cantidad
+            type: number
+      - name: specs
+        label: Especificaciones
+        type: object
+        list: true
+        fields:
+          - name: etiqueta
+            label: Dato
+            type: string
+          - name: valor
+            label: Valor
+            type: string
+      - name: demos
+        label: Muestras para escuchar
+        type: object
+        list: true
+        fields:
+          - name: grupo
+            label: Grupo (ej. Drumloops, Fills, FXs)
+            type: string
+          - name: titulo
+            label: Nombre
+            type: string
+          - name: detalle
+            label: Detalle (ej. Drumloop, 92 BPM)
+            type: string
+          - name: audio
+            label: Audio
+            type: file
+            options:
+              media: kits_audio
+      - name: licencia
+        label: Licencia de uso
+        type: text
+
+  # ---------------------------------------------------------------- TIENDA
+  - name: tienda
+    label: Tienda (precios, promo, reseñas, textos)
+    type: file
+    path: data/tienda.json
+    format: json
+    fields:
+      - name: promo
+        label: Banner de promoción (2x1)
+        type: object
+        fields:
+          - name: activa
+            label: Promo activa
+            type: boolean
+          - name: titulo
+            label: Título
+            type: string
+          - name: lema
+            label: Lema
+            type: string
+          - name: detalle
+            label: Detalle
+            type: text
+
+      - name: licencias
+        label: Licencias y precios
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID (no cambiar)
+            type: string
+            readonly: true
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: precio
+            label: Precio (USD)
+            type: number
+          - name: archivos
+            label: Archivos que se entregan automáticamente
+            type: select
+            options:
+              values: [mp3, wav]
+              multiple: true
+          - name: stems
+            label: Incluye stems (se envían por IG)
+            type: boolean
+          - name: exclusiva
+            label: Es exclusiva
+            type: boolean
+          - name: incluye
+            label: Qué incluye
+            type: string
+            list: true
+          - name: ideal
+            label: Ideal para
+            type: string
+
+      - name: personalizado
+        label: Beats personalizados
+        type: object
+        fields:
+          - name: desde
+            label: Precio desde (USD)
+            type: number
+          - name: incluye
+            label: Qué incluye
+            type: string
+            list: true
+
+      - name: trabajos
+        label: Trabajos míos (Beats personalizados)
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Canción
+            type: string
+          - name: artista
+            label: Artista
+            type: string
+          - name: portada
+            label: Portada
+            type: image
+            options:
+              media: trabajos_img
+          - name: audio
+            label: Audio (MP3)
+            type: file
+            options:
+              media: trabajos_audio
+
+      - name: mixmaster
+        label: Mix & Master
+        type: object
+        fields:
+          - name: desde
+            label: Precio desde (USD, 0 = solo cotización)
+            type: number
+          - name: descripcion
+            label: Descripción
+            type: text
+          - name: incluye
+            label: Qué incluye
+            type: string
+            list: true
+          - name: trabajos
+            label: Trabajos míos (Mix & Master)
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: Canción
+                type: string
+              - name: artista
+                label: Artista
+                type: string
+              - name: portada
+                label: Portada
+                type: image
+                options:
+                  media: trabajos_img
+              - name: audio
+                label: Audio (MP3)
+                type: file
+                options:
+                  media: trabajos_audio
+
+      - name: resenas
+        label: Reseñas de la casa
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            label: Nombre
+            type: string
+          - name: usuario
+            label: Usuario de Instagram (sin @)
+            type: string
+          - name: verificado
+            label: Tiene check azul
+            type: boolean
+          - name: texto
+            label: Reseña
+            type: text
+
+      - name: pasos
+        label: Cómo comprar (pasos)
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+          - name: texto
+            label: Texto
+            type: text
+          - name: etiqueta
+            label: Etiqueta pequeña (opcional)
+            type: string
+
+      - name: faq
+        label: Preguntas frecuentes (página de beats)
+        type: object
+        list: true
+        fields:
+          - name: pregunta
+            label: Pregunta
+            type: string
+          - name: respuesta
+            label: Respuesta
+            type: text
+
+      - name: faqKits
+        label: Preguntas frecuentes (página de drum kits)
+        type: object
+        list: true
+        fields:
+          - name: pregunta
+            label: Pregunta
+            type: string
+          - name: respuesta
+            label: Respuesta
+            type: text
+
+      - name: redes
+        label: Redes y contacto
+        type: object
+        fields:
+          - name: instagram
+            label: Instagram (sin @)
+            type: string
+          - name: whatsapp
+            label: WhatsApp (código de país + número, sin + ni espacios)
+            type: string
+          - name: spotify
+            label: Link de Spotify
+            type: string
+          - name: youtube
+            label: Link de YouTube
+            type: string
+
+      - name: pagos
+        label: Pagos
+        type: object
+        fields:
+          - name: paypal
+            label: Link de PayPal.me
+            type: string
+          - name: comisionPorcentaje
+            label: Comisión PayPal (porcentaje, ej. 0.054 = 5.4%)
+            type: number
+          - name: comisionFija
+            label: Comisión PayPal fija (USD)
+            type: number
+          - name: tipoCambioRespaldo
+            label: Tipo de cambio de respaldo (S/ por dólar)
+            type: number
