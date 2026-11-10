@@ -180,5 +180,21 @@
     "fecha": "2026-11-10",
     "destacado": true,
     "vendido": false
+  },
+  {
+    "nombre": "Animal",
+    "bpm": 80,
+    "tono": "Abm",
+    "genero": "Suaveton",
+    "tags": [
+      "suaveton",
+      "reggaeton",
+      "lento"
+    ],
+    "audio": "audio/beats/ANIMAL 80BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
