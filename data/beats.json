@@ -79,5 +79,23 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "A Fuego Lento",
+    "id": "a-fuego-lento",
+    "bpm": 153,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "lento",
+      "suaveton",
+      "afro"
+    ],
+    "audio": "audio/beats/A FUEGO LENTO_153_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
