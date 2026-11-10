@@ -2,12 +2,13 @@
   {
     "nombre": "Gatas Sandungueras",
     "id": "gatas-sandungueras",
-    "bpm": 95,
+    "bpm": 94,
     "tono": "Em",
     "genero": "Reggaetón",
     "tags": [
       "reggaeton",
-      "old school"
+      "old school",
+      "new school"
     ],
     "audio": "audio/beats/gatas-sandungueras.mp3",
     "fecha": "2026-11-10",
@@ -18,7 +19,7 @@
     "nombre": "Como Antes",
     "id": "como-antes",
     "bpm": 86,
-    "tono": "A menor",
+    "tono": "Am",
     "genero": "Reggaetón",
     "audio": "audio/beats/como-antes.mp3",
     "fecha": "2026-11-09",
