@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Drum Kits · La Cocina — HEY BLESS!</title>
+<meta name="description" content="Drum kits de HEY BLESS!: loops, one shots y sonidos para reggaetón old school y underground.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Drum Kits · La Cocina — HEY BLESS!">
+<meta property="og:description" content="Beats, licencias, beats personalizados, mix &amp; master y drum kits. Prod. HEY BLESS!">
+<meta property="og:image" content="https://heybless.github.io/la-cocina/img/og.jpg">
+<meta property="og:url" content="https://heybless.github.io/la-cocina/drumkits.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="kits">
+
+<img id="chef" src="img/chef.png" alt="">
+
+<div class="wrap">
+  <div class="topbar"><div class="socials" id="socials"></div></div>
+  <div class="brand">
+    <a href="index.html"><img src="img/logo.png" alt="HEY BLESS!"></a>
+    <div class="caps prod">( Prod. HEY BLESS! )</div>
+  </div>
+  <nav class="menu" id="menu"></nav>
+
+  <header class="hero" style="padding-bottom:0">
+    <h1 class="title">Drum Kits</h1>
+    <div class="orn"><span>✦</span></div>
+    <p class="fine" style="margin:-14px auto 30px;font-size:13px">Los ingredientes con los que cocino mis beats, listos para tu próxima receta.</p>
+  </header>
+</div>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="kits-grid" id="kits"></div>
+    <div id="kit-detail"></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2 class="title">Preguntas frecuentes</h2>
+    <div class="orn"><span>✦</span></div>
+    <div class="frame faq peek">
+      <details><summary>¿Cómo recibo el kit?</summary><p>Apenas se confirma tu pago con PayPal te llega el link de descarga del kit a tu correo.</p></details>
+      <details><summary>¿Puedo usar los sonidos en canciones comerciales?</summary><p>Sí. Son 100% libres de regalías: úsalos en tus beats y canciones, en plataformas, YouTube o donde quieras, sin pagar extra.</p></details>
+      <details><summary>¿Puedo revender o compartir el kit?</summary><p>No. No está permitido revender, compartir ni redistribuir los sonidos, sueltos o dentro de otro kit.</p></details>
+      <details><summary>¿Funciona en mi DAW?</summary><p>Sí. Son archivos WAV: funcionan en FL Studio, Ableton, Logic, Reaper y cualquier DAW o sampler.</p></details>
+      <details><summary>¿Puedo pagar en soles?</summary><p>Sí. Escríbeme por Instagram a <b class="ig-handle"></b> y te paso los datos para pagar en soles.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="img/logo.png" alt="HEY BLESS!">
+    <div class="socials" id="socials2"></div>
+    <small>© <span id="yr"></span> HEY BLESS! — Todos los derechos reservados</small>
+  </div>
+</footer>
+
+<div class="player" id="player">
+  <div class="in">
+    <button class="play" id="p-play" aria-label="Reproducir / pausar"></button>
+    <div class="cover" id="p-cover"></div>
+    <div style="min-width:0"><div class="t" id="p-title"></div><div class="wave" id="p-wave" style="margin-top:6px;height:22px"></div></div>
+    <div class="time" id="p-time">0:00</div>
+    <button class="btn sm" id="p-buy">Comprar</button>
+  </div>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Comprar"><div class="frame sheet" id="sheet"></div></div>
+<div class="toast" id="toast"></div>
+<audio id="audio" preload="none"></audio>
+
+<script src="config.js"></script>
+<script src="beats.js"></script>
+<script src="kits.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
