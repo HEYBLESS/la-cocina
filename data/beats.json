@@ -130,5 +130,21 @@
     "fecha": "2026-11-10",
     "destacado": true,
     "vendido": false
+  },
+  {
+    "nombre": "Sabanas",
+    "id": "sabanas",
+    "bpm": 83,
+    "tono": "Fm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school"
+    ],
+    "audio": "audio/beats/SABANAS_83BPM (TAG) (PROD. HEY BLESS!).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
