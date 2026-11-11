@@ -456,5 +456,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Bailame",
+    "bpm": 85,
+    "tono": "Am",
+    "genero": "Reggaeton",
+    "tags": [
+      "old school",
+      "reggaeton"
+    ],
+    "audio": "audio/beats/BAILAME 85BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
