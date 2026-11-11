@@ -1095,5 +1095,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "GATAWAYA",
+    "bpm": 93,
+    "tono": "Cm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "new school"
+    ],
+    "audio": "audio/beats/GATAGAYA 93BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
