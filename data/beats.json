@@ -989,5 +989,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Money Rain",
+    "bpm": 177,
+    "tono": "Bbm",
+    "genero": "Trap",
+    "tags": [
+      "jazz",
+      "florida jazz",
+      "trap"
+    ],
+    "audio": "audio/beats/money rain 177 BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
