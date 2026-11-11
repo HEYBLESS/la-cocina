@@ -441,5 +441,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "VILLANO",
+    "bpm": 144,
+    "tono": "Fm",
+    "genero": "Trap",
+    "tags": [
+      "trap",
+      "crank"
+    ],
+    "audio": "audio/beats/VILLANO 144BPM TAG TRAVIS SOUTHSIDE 808 MAFIA FUTURE.mp3",
+    "portada": "img/beats/PORTADA-3.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
