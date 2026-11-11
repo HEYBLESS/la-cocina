@@ -502,5 +502,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Final Fantasy",
+    "bpm": 140,
+    "tono": "B",
+    "genero": "Hoodtrap",
+    "tags": [
+      "hoodtrap",
+      "trap",
+      "digicore"
+    ],
+    "audio": "audio/beats/FINAL FANTASY 140BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
