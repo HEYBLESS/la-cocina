@@ -120,7 +120,7 @@
     "id": "bobo",
     "bpm": 78,
     "tono": "Gm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "old school",
       "reggaeton"
@@ -136,7 +136,7 @@
     "id": "sabanas",
     "bpm": 83,
     "tono": "Fm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "reggaeton",
       "old school"
@@ -169,7 +169,7 @@
     "id": "contra el muro",
     "bpm": 80,
     "tono": "Abm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "reggaeton",
       "old school",
@@ -201,7 +201,7 @@
     "nombre": "Conmigo Te Portas Mal",
     "bpm": 80,
     "tono": "Abm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "reggaeton",
       "old school",
@@ -210,7 +210,7 @@
     "audio": "audio/beats/CONMIGO TE PORTAS MAL_80BPM (TAG) (PROD. HEY BLESS!).mp3",
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-10",
-    "destacado": false,
+    "destacado": true,
     "vendido": false
   },
   {
@@ -291,7 +291,7 @@
     "nombre": "Motel",
     "bpm": 81,
     "tono": "Bbm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "old school",
       "reggaeton"
@@ -368,7 +368,7 @@
     "nombre": "Guaya",
     "bpm": 80,
     "tono": "Fm",
-    "genero": "Reggaeton",
+    "genero": "Reggaeton Old School",
     "tags": [
       "reggaeton",
       "old school"
