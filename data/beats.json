@@ -599,5 +599,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Monstruo",
+    "bpm": 86,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "new school"
+    ],
+    "audio": "audio/beats/MONSTRUO_86BPM (TAG).mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
