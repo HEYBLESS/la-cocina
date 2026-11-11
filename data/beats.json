@@ -1209,5 +1209,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "DIOR",
+    "bpm": 193,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "fusion",
+      "reggaeton",
+      "trap"
+    ],
+    "audio": "audio/beats/DIOR 193BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
