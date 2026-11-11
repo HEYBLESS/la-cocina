@@ -410,5 +410,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "A Solas",
+    "bpm": 80,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school"
+    ],
+    "audio": "audio/beats/A SOLAS TAG 80BPM.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
