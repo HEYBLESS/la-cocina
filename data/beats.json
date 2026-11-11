@@ -830,5 +830,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "SYMPHONY",
+    "bpm": 155,
+    "tono": "Abm",
+    "genero": "Hoodtrap",
+    "tags": [
+      "hoodtrap",
+      "trap",
+      "sample"
+    ],
+    "audio": "audio/beats/NEMZZZ symphony (155BPM) (tAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
