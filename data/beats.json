@@ -534,5 +534,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Obsesion",
+    "bpm": 85,
+    "tono": "Abm",
+    "genero": "Suaveton",
+    "tags": [
+      "reggaeton",
+      "suaveton",
+      "lento"
+    ],
+    "audio": "audio/beats/OBSESION (85BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA-3.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
