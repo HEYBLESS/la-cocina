@@ -286,5 +286,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Motel",
+    "bpm": 81,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "old school",
+      "reggaeton"
+    ],
+    "audio": "audio/beats/MOTEL 83BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": true,
+    "vendido": false
   }
 ]
