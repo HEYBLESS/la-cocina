@@ -333,5 +333,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Thriller",
+    "bpm": 153,
+    "tono": "Ebm",
+    "genero": "Crank",
+    "tags": [
+      "crank",
+      "trap"
+    ],
+    "audio": "audio/beats/Thirller 153BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
