@@ -722,5 +722,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Real G",
+    "bpm": 89,
+    "tono": "F#",
+    "genero": "Reggaeton Old School",
+    "tags": [
+      "old school",
+      "reggaeton",
+      "new school"
+    ],
+    "audio": "audio/beats/ÑENGO REAL G 89BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
