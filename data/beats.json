@@ -769,5 +769,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "DUM DUM",
+    "bpm": 145,
+    "tono": "Gm",
+    "genero": "Hoodtrap",
+    "tags": [
+      "nathan bounce",
+      "hoodtrap",
+      "trap"
+    ],
+    "audio": "audio/beats/DUM DUM (NATHAN BOUNCE) (145BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
