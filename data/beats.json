@@ -425,5 +425,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Beat It",
+    "bpm": 74,
+    "tono": "Em",
+    "genero": "Crank",
+    "tags": [
+      "crank",
+      "trap",
+      "hard"
+    ],
+    "audio": "audio/beats/BEAT IT_HARD CRANK TAG 74BPM.mp3",
+    "portada": "img/beats/PORTADA-3.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
