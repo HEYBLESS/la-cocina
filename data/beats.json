@@ -1358,5 +1358,22 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "TRY",
+    "bpm": 125,
+    "tono": "Abm",
+    "genero": "Jersey Club",
+    "tags": [
+      "bounce",
+      "jersey club",
+      "house",
+      "switch"
+    ],
+    "audio": "audio/beats/TRY 125BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
