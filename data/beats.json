@@ -301,5 +301,21 @@
     "fecha": "2026-11-10",
     "destacado": true,
     "vendido": false
+  },
+  {
+    "nombre": "En La Cama",
+    "bpm": 87,
+    "tono": "Bbm",
+    "genero": "Suaveton",
+    "tags": [
+      "suaveton",
+      "reggaeton",
+      "lento"
+    ],
+    "audio": "audio/beats/EN LA CAMA 87BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
