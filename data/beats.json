@@ -1065,5 +1065,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "LOBA",
+    "bpm": 96,
+    "tono": "Am",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "new school"
+    ],
+    "audio": "audio/beats/LOBA_96BPM (PROD HEY BLESS!) (tAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
