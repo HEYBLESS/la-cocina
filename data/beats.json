@@ -317,5 +317,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "YEAH HOE!",
+    "bpm": 140,
+    "tono": "Fm",
+    "genero": "Crank",
+    "tags": [
+      "crank",
+      "trap",
+      "jerk"
+    ],
+    "audio": "audio/beats/CRANKY 140BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
