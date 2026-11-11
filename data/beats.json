@@ -471,5 +471,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "La curiosidad",
+    "bpm": 81,
+    "tono": "Am",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school"
+    ],
+    "audio": "audio/beats/LA CURIOSIDAD 81BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-3.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
