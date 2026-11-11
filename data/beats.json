@@ -1166,5 +1166,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "SIN PaNTY",
+    "bpm": 98,
+    "tono": "Bbm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "new school"
+    ],
+    "audio": "audio/beats/SIN PaNTY 98BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
