@@ -1282,5 +1282,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "DANGEROUS",
+    "bpm": 198,
+    "tono": "Bbm",
+    "genero": "Rnb 2000",
+    "tags": [
+      "rnb 2000",
+      "rnb",
+      "trap"
+    ],
+    "audio": "audio/beats/DANGEROUS 198BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
