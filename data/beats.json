@@ -1298,5 +1298,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Bandolero",
+    "bpm": 90,
+    "tono": "Bm",
+    "genero": "Reggaeton Old School",
+    "tags": [
+      "old school",
+      "reggaeton"
+    ],
+    "audio": "audio/beats/Bandelero 90BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
