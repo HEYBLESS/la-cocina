@@ -1328,5 +1328,19 @@
     "fecha": "2023-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "DI'AMANTE",
+    "bpm": 101,
+    "tono": "C#m",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school"
+    ],
+    "audio": "audio/beats/DI'AMANTE 101BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
