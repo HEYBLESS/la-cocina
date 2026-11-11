@@ -228,5 +228,16 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Descontrolá",
+    "bpm": 84,
+    "tono": "Bbm",
+    "genero": "Dancehall",
+    "audio": "audio/beats/DESTROLÁ_84BPM_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
