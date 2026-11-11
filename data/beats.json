@@ -1125,5 +1125,16 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Abursadora",
+    "bpm": 110,
+    "tono": "Cm",
+    "genero": "Electroflow",
+    "audio": "audio/beats/ABUSADORA 110BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
