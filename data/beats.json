@@ -1225,5 +1225,19 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "MOTORXS",
+    "bpm": 189,
+    "tono": "Cm",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school"
+    ],
+    "audio": "audio/beats/MOTORXS (189BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
