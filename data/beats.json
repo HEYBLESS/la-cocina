@@ -481,7 +481,7 @@
       "reggaeton",
       "old school"
     ],
-    "audio": "audio/beats/LA CURIOSIDAD 81BPM TAG.mp3",
+    "audio": "audio/beats/OBSESION (85BPM) (TAG)-1.mp3",
     "portada": "img/beats/PORTADA-3.png",
     "fecha": "2026-11-10",
     "destacado": false,
@@ -547,6 +547,21 @@
     ],
     "audio": "audio/beats/OBSESION (85BPM) (TAG).mp3",
     "portada": "img/beats/PORTADA-3.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
+  },
+  {
+    "nombre": "Account",
+    "bpm": 140,
+    "tono": "Bm",
+    "genero": "Hoodtrap",
+    "tags": [
+      "hoodtrap",
+      "trap"
+    ],
+    "audio": "audio/beats/ACCOUNT 140BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
