@@ -256,5 +256,19 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Pecar",
+    "bpm": 100,
+    "tono": "Cm",
+    "genero": "Afrodembow",
+    "tags": [
+      "afrodembow"
+    ],
+    "audio": "audio/beats/PECAR_100BPM_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
