@@ -785,5 +785,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "LEAN",
+    "bpm": 73,
+    "tono": "Cm",
+    "genero": "Hoodtrap",
+    "tags": [
+      "hoodtrap",
+      "malianteo",
+      "jerk"
+    ],
+    "audio": "audio/beats/LEAN (73BPM) TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
