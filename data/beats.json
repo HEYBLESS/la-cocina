@@ -942,5 +942,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "PA MATAR LAS PENAS",
+    "bpm": 210,
+    "tono": "Cm",
+    "genero": "Detroit",
+    "tags": [
+      "sample",
+      "detroit",
+      "trap"
+    ],
+    "audio": "audio/beats/DESAHOGO (210BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
