@@ -1181,5 +1181,19 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "dMntE",
+    "bpm": 203,
+    "tono": "Cm",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school"
+    ],
+    "audio": "audio/beats/dMntE (203 BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
