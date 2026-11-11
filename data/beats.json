@@ -893,5 +893,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "PERRAZA",
+    "bpm": 189,
+    "tono": "Fm",
+    "genero": "Jerk",
+    "tags": [
+      "evil jerk",
+      "jerk",
+      "hoodtrap"
+    ],
+    "audio": "audio/beats/PERRAZA (189BPM) (tAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
