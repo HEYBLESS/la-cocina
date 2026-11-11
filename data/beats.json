@@ -738,5 +738,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Conexion",
+    "bpm": 105,
+    "tono": "F#",
+    "genero": "Electroflow",
+    "tags": [
+      "electroflow",
+      "old school"
+    ],
+    "audio": "audio/beats/ELECTROFLOW CONEXION 105BPM TAG .mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
