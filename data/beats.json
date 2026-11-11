@@ -676,5 +676,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "K No Pare El Bellakeo",
+    "bpm": 88,
+    "tono": "C",
+    "genero": "Hip Hop",
+    "tags": [
+      "hip hop",
+      "old school"
+    ],
+    "audio": "audio/beats/K NO PARE EL BELLAKEO (TAG) (97BPM).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
