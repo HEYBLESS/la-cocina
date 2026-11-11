@@ -1239,5 +1239,19 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Si Se Da",
+    "bpm": 102,
+    "tono": "Abm",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school"
+    ],
+    "audio": "audio/beats/SI SE DA (102 PM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
