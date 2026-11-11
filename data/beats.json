@@ -565,5 +565,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "En La Playa",
+    "bpm": 100,
+    "tono": "Bbm",
+    "genero": "Dancehall",
+    "tags": [
+      "dancehall",
+      "afrobeat",
+      "old school"
+    ],
+    "audio": "audio/beats/EN LA PLAYA (100BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
