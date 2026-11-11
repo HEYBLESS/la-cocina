@@ -706,5 +706,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "MALLORCA",
+    "bpm": 184,
+    "tono": "F",
+    "genero": "Hoodtrap",
+    "tags": [
+      "hoodtrap",
+      "hard",
+      "jerk"
+    ],
+    "audio": "audio/beats/MALLORCA HOODTRAP (184 (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
