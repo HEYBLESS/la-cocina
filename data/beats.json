@@ -645,5 +645,36 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Traje",
+    "bpm": 83,
+    "tono": "Bm",
+    "genero": "Suaveton",
+    "tags": [
+      "reggaeton",
+      "lento",
+      "suaveton"
+    ],
+    "audio": "audio/beats/TRAJE 83BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
+  },
+  {
+    "nombre": "MAGIANEGRA",
+    "bpm": 115,
+    "tono": "Bbm",
+    "genero": "Crank",
+    "tags": [
+      "crank",
+      "trap"
+    ],
+    "audio": "audio/beats/MAGIANEGRA 115BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
