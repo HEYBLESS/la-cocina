@@ -363,5 +363,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Guaya",
+    "bpm": 80,
+    "tono": "Fm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school"
+    ],
+    "audio": "audio/beats/GUAYA 80BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
