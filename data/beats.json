@@ -486,5 +486,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Atrevete",
+    "bpm": 110,
+    "tono": "Bm",
+    "genero": "Electroflow",
+    "tags": [
+      "electroflow",
+      "urbano",
+      "old school"
+    ],
+    "audio": "audio/beats/ATREVETE ELECTROFLOW TAG 110BPM.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
