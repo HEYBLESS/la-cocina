@@ -1313,5 +1313,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "GYALLL",
+    "bpm": 98,
+    "tono": "Bm",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school",
+      "old school"
+    ],
+    "audio": "audio/beats/GYALLL 98BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2023-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
