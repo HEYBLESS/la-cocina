@@ -583,5 +583,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Pegadito",
+    "bpm": 77,
+    "tono": "C#m",
+    "genero": "Suaveton",
+    "tags": [
+      "reggaeton",
+      "old school",
+      "suaveton"
+    ],
+    "audio": "audio/beats/PEGADITO (77BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
