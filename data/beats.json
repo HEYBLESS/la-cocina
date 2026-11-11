@@ -518,5 +518,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "CACHI",
+    "bpm": 100,
+    "tono": "Cm",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "mexa",
+      "perreo"
+    ],
+    "audio": "audio/beats/CACHI 100BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
