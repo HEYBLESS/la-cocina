@@ -1179,7 +1179,7 @@
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-11",
     "destacado": false,
-    "vendido": false
+    "vendido": true
   },
   {
     "nombre": "dMntE",
@@ -1340,7 +1340,7 @@
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-11",
     "destacado": false,
-    "vendido": false
+    "vendido": true
   },
   {
     "nombre": "PA TRA",
@@ -1356,7 +1356,7 @@
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-11",
     "destacado": false,
-    "vendido": false
+    "vendido": true
   },
   {
     "nombre": "TRY",
