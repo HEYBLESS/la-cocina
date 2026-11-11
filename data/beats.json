@@ -974,5 +974,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "DOUBLE CUP",
+    "bpm": 170,
+    "tono": "Am",
+    "genero": "Trap",
+    "tags": [
+      "jazz",
+      "florida jazz"
+    ],
+    "audio": "audio/beats/DOUBLE CUP (HEY BLESS! X MAYKIIV) (170BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
