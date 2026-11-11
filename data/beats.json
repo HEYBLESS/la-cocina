@@ -270,5 +270,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Bellako",
+    "bpm": 203,
+    "tono": "Abm",
+    "genero": "Jerk",
+    "tags": [
+      "jerk",
+      "trap",
+      "hoodtrap"
+    ],
+    "audio": "audio/beats/BELLAKO_203BPM_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
