@@ -925,5 +925,22 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "PLOMAZO",
+    "bpm": 100,
+    "tono": "Dm",
+    "genero": "Jerk",
+    "tags": [
+      "evil jerk",
+      "jerk",
+      "hoodtrap",
+      "hard"
+    ],
+    "audio": "audio/beats/PLOMAZO (100BPM) (DM) (TAG).mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
