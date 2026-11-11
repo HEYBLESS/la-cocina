@@ -1035,5 +1035,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Atrevida",
+    "bpm": 128,
+    "tono": "Bm",
+    "genero": "Electroflow",
+    "tags": [
+      "electroflow",
+      "old school"
+    ],
+    "audio": "audio/beats/ATREVIDA 112BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
