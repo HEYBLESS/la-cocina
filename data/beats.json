@@ -752,7 +752,7 @@
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-11",
     "destacado": false,
-    "vendido": false
+    "vendido": true
   },
   {
     "nombre": "SOLA",
@@ -1150,7 +1150,7 @@
     "portada": "img/beats/PORTADA.png",
     "fecha": "2026-11-11",
     "destacado": false,
-    "vendido": false
+    "vendido": true
   },
   {
     "nombre": "beYaK",
