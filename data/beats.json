@@ -812,5 +812,23 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "La Pregunta",
+    "bpm": 92,
+    "tono": "C#m",
+    "genero": "Jerk",
+    "tags": [
+      "jerk",
+      "old school",
+      "reggaeton",
+      "trap",
+      "fusion"
+    ],
+    "audio": "audio/beats/OLD JERK (REGGAETON OLD X JERK) 92BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
