@@ -458,21 +458,6 @@
     "vendido": false
   },
   {
-    "nombre": "Bailame",
-    "bpm": 85,
-    "tono": "Am",
-    "genero": "Reggaeton",
-    "tags": [
-      "old school",
-      "reggaeton"
-    ],
-    "audio": "audio/beats/BAILAME 85BPM TAG.mp3",
-    "portada": "img/beats/PORTADA-4.png",
-    "fecha": "2026-11-10",
-    "destacado": false,
-    "vendido": false
-  },
-  {
     "nombre": "La curiosidad",
     "bpm": 81,
     "tono": "Am",
@@ -577,6 +562,23 @@
       "old school"
     ],
     "audio": "audio/beats/EN LA PLAYA (100BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
+  },
+  {
+    "nombre": "Everytime",
+    "bpm": 139,
+    "tono": "Abm",
+    "genero": "RnB",
+    "tags": [
+      "rnb",
+      "trap",
+      "soul",
+      "plug"
+    ],
+    "audio": "audio/beats/EVERYTIME (TAG) (139BPM).mp3",
     "portada": "img/beats/PORTADA-4.png",
     "fecha": "2026-11-10",
     "destacado": false,
