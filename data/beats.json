@@ -958,5 +958,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Pa caerte",
+    "bpm": 191,
+    "tono": "Fm",
+    "genero": "Trap",
+    "tags": [
+      "trap",
+      "florida",
+      "melodic"
+    ],
+    "audio": "audio/beats/pa caerte 191BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
