@@ -753,5 +753,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "SOLA",
+    "bpm": 120,
+    "tono": "Bbm",
+    "genero": "Plug",
+    "tags": [
+      "plug",
+      "rnb",
+      "trap"
+    ],
+    "audio": "audio/beats/SOLA PLUGG (120BPM) (Bbm) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
