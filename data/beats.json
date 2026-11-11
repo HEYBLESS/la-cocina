@@ -1342,5 +1342,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "PA TRA",
+    "bpm": 130,
+    "tono": "Bbm",
+    "genero": "Funk do Brasil",
+    "tags": [
+      "funk",
+      "brasil",
+      "baile"
+    ],
+    "audio": "audio/beats/PA TRA 130BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
