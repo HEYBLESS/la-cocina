@@ -348,5 +348,20 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Plaka Plaka",
+    "bpm": 153,
+    "tono": "Cm",
+    "genero": "Crank",
+    "tags": [
+      "crank",
+      "trap"
+    ],
+    "audio": "audio/beats/PLAKA PLAKA 153BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
