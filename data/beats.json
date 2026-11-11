@@ -378,5 +378,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Apaga La Luz",
+    "bpm": 76,
+    "tono": "Fm",
+    "genero": "Jerk",
+    "tags": [
+      "jerk",
+      "hoodtrap",
+      "trap"
+    ],
+    "audio": "audio/beats/APAGA LA LUZ HOODTRAP 76BPM tag.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
