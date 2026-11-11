@@ -614,5 +614,36 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Movimiento",
+    "bpm": 106,
+    "tono": "Bbm",
+    "genero": "Electroflow",
+    "tags": [
+      "electroflow",
+      "old school"
+    ],
+    "audio": "audio/beats/MOVIMIENTO 106BPM TAG.mp3",
+    "portada": "img/beats/PORTADA-4.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
+  },
+  {
+    "nombre": "NightClub",
+    "bpm": 94,
+    "tono": "Bbm",
+    "genero": "Trap",
+    "tags": [
+      "trap",
+      "reggaeton",
+      "fusion"
+    ],
+    "audio": "audio/beats/NIGHTCLUB 94BPM TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
