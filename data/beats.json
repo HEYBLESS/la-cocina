@@ -862,5 +862,21 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Fall In Love",
+    "bpm": 80,
+    "tono": "F#m",
+    "genero": "Sexy Drill",
+    "tags": [
+      "sexy drill",
+      "hoodtrap",
+      "drill"
+    ],
+    "audio": "audio/beats/SEXYDRILL - FALL IN LOVE (80BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
