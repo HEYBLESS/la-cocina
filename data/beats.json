@@ -239,5 +239,22 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "El Dinero No Duerme",
+    "bpm": 91,
+    "tono": "Bbm",
+    "genero": "Trap",
+    "tags": [
+      "florida jazz",
+      "trap",
+      "jazz",
+      "sample"
+    ],
+    "audio": "audio/beats/EL DINERO NO DUERME_88BPM_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
