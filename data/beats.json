@@ -394,5 +394,21 @@
     "fecha": "2026-11-10",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Escandalo",
+    "bpm": 81,
+    "tono": "C#m",
+    "genero": "Reggaeton",
+    "tags": [
+      "reggaeton",
+      "old school",
+      "lento"
+    ],
+    "audio": "audio/beats/ESCANDALO_81BP_TAG.mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-10",
+    "destacado": false,
+    "vendido": false
   }
 ]
