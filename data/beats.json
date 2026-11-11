@@ -878,5 +878,20 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "2004",
+    "bpm": 190,
+    "tono": "Cm",
+    "genero": "Jerk",
+    "tags": [
+      "jerk",
+      "evil jek"
+    ],
+    "audio": "audio/beats/2004 190BPM (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
