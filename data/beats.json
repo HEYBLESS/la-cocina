@@ -1253,5 +1253,19 @@
     "fecha": "2026-11-11",
     "destacado": false,
     "vendido": false
+  },
+  {
+    "nombre": "Chimba",
+    "bpm": 89,
+    "tono": "Am",
+    "genero": "Reggaeton",
+    "tags": [
+      "new school"
+    ],
+    "audio": "audio/beats/CHIMBA (89BPM) (TAG).mp3",
+    "portada": "img/beats/PORTADA.png",
+    "fecha": "2026-11-11",
+    "destacado": false,
+    "vendido": false
   }
 ]
