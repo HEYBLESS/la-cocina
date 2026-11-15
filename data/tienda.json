@@ -9,7 +9,7 @@
     {
       "id": "basica",
       "nombre": "Licencia Básica",
-      "precio": 15,
+      "precio": 20,
       "archivos": [
         "mp3"
       ],
@@ -28,7 +28,7 @@
     {
       "id": "premium",
       "nombre": "Licencia Premium",
-      "precio": 30,
+      "precio": 40,
       "archivos": [
         "mp3",
         "wav"
@@ -48,7 +48,7 @@
     {
       "id": "premiumplus",
       "nombre": "Licencia Premium+",
-      "precio": 60,
+      "precio": 70,
       "archivos": [
         "mp3",
         "wav"
