@@ -9,7 +9,7 @@
     {
       "id": "basica",
       "nombre": "Licencia Básica",
-      "precio": 25,
+      "precio": 15,
       "archivos": [
         "mp3"
       ],
@@ -28,7 +28,7 @@
     {
       "id": "premium",
       "nombre": "Licencia Premium",
-      "precio": 40,
+      "precio": 30,
       "archivos": [
         "mp3",
         "wav"
@@ -48,7 +48,7 @@
     {
       "id": "premiumplus",
       "nombre": "Licencia Premium+",
-      "precio": 70,
+      "precio": 60,
       "archivos": [
         "mp3",
         "wav"
@@ -69,7 +69,7 @@
     {
       "id": "exclusiva",
       "nombre": "Exclusiva",
-      "precio": 130,
+      "precio": 100,
       "archivos": [
         "mp3",
         "wav"
@@ -90,7 +90,7 @@
     }
   ],
   "personalizado": {
-    "desde": 150,
+    "desde": 130,
     "incluye": [
       "MP3 / WAV / Stems",
       "Streams ilimitados",
