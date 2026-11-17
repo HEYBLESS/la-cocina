@@ -43,10 +43,12 @@ a.pill svg{width:18px;height:18px}
 .brand{text-align:center;padding:26px 0 8px}
 .brand img{width:min(460px,82vw);display:block;margin:0 auto}
 .brand .prod{margin-top:14px}
-nav.menu{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:980px;margin:26px auto 0}
+nav.menu{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;max-width:980px;margin:26px auto 0}
 nav.menu a.on{background:var(--ink);color:var(--paper);outline-color:var(--paper)}
 nav.menu a{display:flex;align-items:center;justify-content:center;min-height:52px;line-height:1.25;border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:-5px;padding:15px 8px;text-align:center;text-decoration:none;font-weight:900;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--paper);transition:background .15s,color .15s}
 nav.menu a:hover{background:var(--ink);color:var(--paper);outline-color:var(--paper)}
+nav.menu a.rem{background:#2e3631;border-color:#2e3631;outline-color:#e6e3d9;color:#e6e3d9}
+nav.menu a.rem:hover,nav.menu a.rem.on{background:#5a3e26;border-color:#5a3e26}
 
 /* hero */
 .hero{padding:44px 0 20px;text-align:center}
@@ -244,7 +246,6 @@ footer{padding:46px 0 30px;margin-top:50px;border-top:1px solid var(--ink)}
 
 @media (max-width:900px){
   nav.menu{grid-template-columns:1fr 1fr}
-  nav.menu a:last-child{grid-column:1/-1}
   .lic-grid,.lic-cols,.custom,.detail{grid-template-columns:1fr}
   .inc{border-left:0;border-top:1px solid var(--ink);padding:28px 0 0;margin-top:26px}
   .custom{padding:40px 24px 30px}

@@ -84,8 +84,8 @@ const linkTo = hash => location.origin + location.pathname + "#" + hash;
 /* nav */
 function renderNav() {
   const home = PAGE === "beats" ? "" : "index.html";
-  const items = [["Catálogo de beats", home + "#beats"], ["Licencias", home + "#licencias"], ["Beats personalizados", home + "#personalizados"], ["Mix &amp; Master", home + "#mixmaster"], ["Drum Kits", "drumkits.html"]];
-  $("#menu").innerHTML = items.map(([t, h]) => `<a href="${h}"${PAGE === "kits" && h === "drumkits.html" ? ' class="on"' : ""}>${t}</a>`).join("");
+  const items = [["Catálogo de beats", home + "#beats"], ["Licencias", home + "#licencias"], ["Beats personalizados", home + "#personalizados"], ["Mix &amp; Master", home + "#mixmaster"], ["Drum Kits", "drumkits.html"], ["Remate", "remate.html"]];
+  $("#menu").innerHTML = items.map(([t, h]) => `<a href="${h}" class="${h === "remate.html" ? "rem" : ""}${PAGE === "kits" && h === "drumkits.html" ? " on" : ""}">${t}</a>`).join("");
 }
 
 /* ---------- audio ---------- */
