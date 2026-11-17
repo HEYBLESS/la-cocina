@@ -143,7 +143,7 @@ async function enviar() {
     const r = await fetch(C.backend, { method: "POST", body: JSON.stringify({ action: "pedido", tipo: "remate", ids: [...sel],
       nombre: $("#fn").value.trim(), artista: $("#fa").value.trim(), correo: $("#fe").value.trim(), code, terminos: true }) }).then(r => r.json());
     if (!r.ok) throw new Error(r.error || "");
-    $("#pay").hidden = true; $("#done").hidden = false;
+    $("#pay").hidden = true; $("#done").hidden = false; if (window.hbToast) hbToast("Pedido enviado a la cocina");
     $("#donemsg").innerHTML = `Gracias, <b style="font-weight:400">${esc($("#fn").value.trim())}</b>. Tu pedido <b style="font-weight:400">${esc(code)}</b> está en la cocina.<br>Apenas confirme tu pago en PayPal, tus WAV sin tag te llegan a <b style="font-weight:400">${esc($("#fe").value.trim())}</b>. Revisa también la carpeta de spam.`;
   } catch (err) {
     $("#err2").textContent = (err && err.message) || "No se pudo enviar el pedido. Inténtalo de nuevo o escríbeme por Instagram.";
@@ -156,7 +156,14 @@ document.addEventListener("click", e => {
   const t = e.target.closest("[data-play],[data-add],#go,#sent,#back,#vt,#pp");
   if (!t) return;
   if (t.dataset.play) toggle(t.dataset.play);
-  else if (t.dataset.add) { const id = t.dataset.add; sel.has(id) ? sel.delete(id) : sel.add(id); $("#err").textContent = ""; render(); }
+  else if (t.dataset.add) {
+    const id = t.dataset.add, b = BEATS.find(x => x.id === id), n0 = sel.size;
+    sel.has(id) ? sel.delete(id) : sel.add(id); $("#err").textContent = ""; render();
+    if (window.hbToast && b) {
+      if (sel.size > n0) hbToast(sel.size % 4 === 0 ? `${b.nombre} va gratis · 3x4` : `${b.nombre} agregado al pedido`);
+      else hbToast(`${b.nombre} quitado del pedido`);
+    }
+  }
   else if (t.id === "go") abrirCuenta();
   else if (t.id === "sent") enviar();
   else if (t.id === "back") { $("#pay").hidden = true; $("#menu-sec").hidden = false; }

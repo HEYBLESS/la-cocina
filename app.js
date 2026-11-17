@@ -500,7 +500,7 @@ function copy(text, msg) {
   try { navigator.clipboard.writeText(text).then(() => toast(msg || "¡Copiado!"), () => toast("No se pudo copiar")); }
   catch { toast("No se pudo copiar"); }
 }
-let tt; function toast(m) { const el = $("#toast"); el.textContent = m; el.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => el.classList.remove("show"), 1800); }
+let tt; function toast(m) { if (window.hbToast) return window.hbToast(m); const el = $("#toast"); el.textContent = m; el.classList.add("show"); clearTimeout(tt); tt = setTimeout(() => el.classList.remove("show"), 1800); }
 
 /* exchange rate (only shown at payment) */
 (async () => { try { const j = await (await fetch("https://open.er-api.com/v6/latest/USD", { cache: "no-store" })).json();

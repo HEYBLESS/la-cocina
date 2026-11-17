@@ -359,3 +359,23 @@ footer{padding:46px 0 30px;margin-top:50px;border-top:1px solid var(--ink)}
 .critic a:hover{color:var(--red)}
 .ver{width:16px;height:16px;flex:none}
 @media (max-width:760px){.reviews{grid-template-columns:1fr}}
+
+/* ---------- animaciones (anim.js) ---------- */
+.hb-rpl{position:absolute;inset:0;overflow:hidden;border-radius:inherit;pointer-events:none;z-index:0}
+.hb-rpl i{position:absolute;border-radius:50%;background:currentColor;opacity:.28;transform:scale(0);animation:hbRipple .65s cubic-bezier(.22,.61,.36,1) forwards}
+@keyframes hbRipple{to{transform:scale(1);opacity:0}}
+.hb-toasts{position:fixed;left:50%;bottom:120px;transform:translateX(-50%);z-index:120;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;width:max-content;max-width:92vw}
+.hb-toast{background:var(--ink);color:var(--paper);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:11px;padding:12px 20px;border:1px solid var(--ink);outline:1px solid var(--paper);outline-offset:-5px;opacity:0;transform:translateY(14px) scale(.96);transition:opacity .28s ease,transform .38s cubic-bezier(.2,.9,.3,1.25);text-align:center}
+.hb-toast.in{opacity:1;transform:none}
+.hb-toast.out{opacity:0;transform:translateY(-8px) scale(.98);transition:opacity .3s ease,transform .3s ease}
+body[data-page="remate"] .hb-toast{background:#2e3631;color:#e6e3d9;border-color:#5a3e26;outline-color:rgba(230,227,217,.5);font-family:"Josefin Sans",sans-serif;font-weight:400;letter-spacing:.2em}
+.hb-anim body{opacity:0;transition:opacity .45s ease}
+.hb-anim.hb-ready body{opacity:1}
+.hb-anim.hb-leave body{opacity:0;transition:opacity .25s ease}
+.hb-anim .hb-rev{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.hb-anim .hb-rev.hb-in{opacity:1;transform:none}
+.hb-anim .modal.open .sheet{animation:hbSheet .42s cubic-bezier(.2,.8,.2,1)}
+@keyframes hbSheet{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
+.hb-anim #menu-sec:not([hidden]),.hb-anim #pay:not([hidden]),.hb-anim #done:not([hidden]){animation:hbSwap .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes hbSwap{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.toast{display:none!important}
