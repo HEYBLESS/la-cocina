@@ -53,6 +53,27 @@
 .tc ol{text-align:left;font-size:12.5px;line-height:1.65;margin:12px 0 0 18px}
 .ph{padding:18px 0;font-size:13px;opacity:.7}
 @media (max-width:520px){.board{padding:24px 14px;border-width:8px}.ri .mt{display:none}.ri .nm{max-width:60%}.offer{gap:16px}.offer .big{font-size:44px}}
+.rp{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#2e3631;border-top:6px solid #5a3e26;color:#e6e3d9;font-family:"Josefin Sans",sans-serif;font-weight:300;text-shadow:0 0 1px rgba(230,227,217,.45);box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+.rp[hidden],.rp .ab[hidden]{display:none}
+.rp .in{max-width:760px;margin:0 auto;padding:10px 16px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center}
+.rp .pp{grid-row:span 2;width:44px;height:44px;border-radius:50%;border:1px solid #e6e3d9;display:flex;align-items:center;justify-content:center;background:#e6e3d9}
+.rp .pp svg{width:16px;height:16px;fill:#2e3631}
+.rp .top{display:flex;align-items:baseline;gap:10px;min-width:0}
+.rp .tt{letter-spacing:.16em;text-transform:uppercase;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rp .mt{font-size:11px;opacity:.55;white-space:nowrap}
+.rp .tm{margin-left:auto;font-size:11px;opacity:.8;white-space:nowrap;font-variant-numeric:tabular-nums}
+.rp .bar{position:relative;height:18px;display:flex;align-items:center}
+.rp .ab{position:absolute;top:6px;height:6px;background:rgba(240,199,94,.45);border-radius:3px;pointer-events:none}
+.rp input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:rgba(230,227,217,.25);border-radius:2px;outline:0;position:relative;margin:0}
+.rp input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:#e6e3d9;cursor:pointer}
+.rp input[type=range]::-moz-range-thumb{width:14px;height:14px;border:0;border-radius:50%;background:#e6e3d9;cursor:pointer}
+.rp .ctl{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:4px}
+.rp .ctl button{font-family:"Josefin Sans",sans-serif;color:#e6e3d9;border:1px solid rgba(230,227,217,.45);border-radius:14px;padding:4px 11px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.rp .ctl button.on{background:#f0c75e;border-color:#f0c75e;color:#2e3631;text-shadow:none}
+.rp .ctl .x{border:0;opacity:.7;text-decoration:underline;text-underline-offset:3px}
+.rp .hint{grid-column:1/-1;text-align:center;font-size:10.5px;opacity:.6;min-height:13px}
+body{padding-bottom:150px}
+@media (max-width:520px){.rp .mt{display:none}.rp .ctl button{padding:4px 9px;font-size:10px}}
 </style>
 </head>
 <body data-page="remate">
@@ -129,8 +150,23 @@
   </div>
 </footer>
 
+<div class="rp" id="rp" hidden><div class="in">
+  <button class="pp" id="rp-play" aria-label="Reproducir o pausar"></button>
+  <div class="top"><span class="tt" id="rp-t"></span><span class="mt" id="rp-m"></span><span class="tm" id="rp-time">0:00 / 0:00</span></div>
+  <div class="bar"><div class="ab" id="rp-ab" hidden></div><input type="range" id="rp-seek" min="0" max="1000" step="1" value="0" aria-label="Posición del beat"></div>
+  <div class="ctl">
+    <button id="rp-back" aria-label="Retroceder 10 segundos">« 10s</button>
+    <button id="rp-fwd" aria-label="Adelantar 10 segundos">10s »</button>
+    <button id="rp-loop" aria-label="Repetir el beat completo">Repetir</button>
+    <button id="rp-a" aria-label="Marcar inicio del tramo">A</button>
+    <button id="rp-b" aria-label="Marcar fin del tramo">B</button>
+    <button id="rp-clr" class="x" aria-label="Quitar tramo A-B" hidden>quitar tramo</button>
+  </div>
+  <div class="hint" id="rp-hint">Marca A y B para repetir solo la parte que quieres practicar</div>
+</div></div>
+
 <audio id="audio" preload="none"></audio>
 <script src="config.js?v=4"></script>
-<script src="remate.js?v=1"></script>
+<script src="remate.js?v=2"></script>
 </body>
 </html>
