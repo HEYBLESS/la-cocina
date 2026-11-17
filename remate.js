@@ -89,16 +89,16 @@ let loading = null;
 function toggle(id) {
   const b = BEATS.find(x => x.id === id); if (!b) return;
   if (playing === id && audio.src) { audio.paused ? audio.play().catch(() => {}) : audio.pause(); return; }
-  playing = id; A = B = null;
+  playing = id;
   audio.onerror = () => { audio.onerror = null; if (playing === b.id) respaldo(b); };
   audio.src = blobs[id] || b.audio; audio.play().catch(() => {});
   render(); barra();
 }
 ["play", "pause", "ended"].forEach(ev => audio.addEventListener(ev, () => { render(); barra(); }));
 
-/* reproductor: barra, saltos, repetir y tramo A-B */
+/* reproductor: play y línea de tiempo */
 const fmt = s => isFinite(s) ? Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0") : "0:00";
-let A = null, B = null, arrastrando = false;
+let arrastrando = false;
 function barra() {
   const b = BEATS.find(x => x.id === playing);
   if (!b) { $("#rp").hidden = true; return; }
@@ -106,38 +106,16 @@ function barra() {
   $("#rp-t").textContent = b.nombre;
   $("#rp-m").textContent = [b.genero, b.bpm ? b.bpm + " BPM" : ""].filter(Boolean).join(" · ");
   $("#rp-play").innerHTML = loading === b.id ? "…" : audio.paused ? ICON.play : ICON.pause;
-  $("#rp-loop").classList.toggle("on", audio.loop);
-  $("#rp-a").classList.toggle("on", A !== null); $("#rp-b").classList.toggle("on", B !== null);
-  $("#rp-clr").hidden = A === null && B === null;
-  const d = audio.duration, ab = $("#rp-ab");
-  if (A !== null && isFinite(d) && d) {
-    const fin = B !== null ? B : audio.currentTime;
-    ab.hidden = false; ab.style.left = (A / d * 100) + "%"; ab.style.width = Math.max(0, (fin - A) / d * 100) + "%";
-  } else ab.hidden = true;
-  $("#rp-hint").textContent = A !== null && B !== null ? `Repitiendo de ${fmt(A)} a ${fmt(B)}` : A !== null ? `Inicio en ${fmt(A)} · ahora marca B donde termina` : "Marca A y B para repetir solo la parte que quieres practicar";
 }
 audio.addEventListener("timeupdate", () => {
-  if (A !== null && B !== null && audio.currentTime >= B) audio.currentTime = A;
   if (!arrastrando && audio.duration) $("#rp-seek").value = Math.round(audio.currentTime / audio.duration * 1000);
   $("#rp-time").textContent = fmt(audio.currentTime) + " / " + fmt(audio.duration);
-  if (A !== null && B === null) barra();
 });
 audio.addEventListener("loadedmetadata", barra);
 const seek = $("#rp-seek");
 seek.addEventListener("input", () => { arrastrando = true; if (audio.duration) $("#rp-time").textContent = fmt(seek.value / 1000 * audio.duration) + " / " + fmt(audio.duration); });
 seek.addEventListener("change", () => { if (audio.duration) audio.currentTime = seek.value / 1000 * audio.duration; arrastrando = false; });
-const mover = s => { if (audio.duration) audio.currentTime = Math.min(Math.max(0, audio.currentTime + s), audio.duration - 0.1); };
 $("#rp-play").addEventListener("click", () => playing && toggle(playing));
-$("#rp-back").addEventListener("click", () => mover(-10));
-$("#rp-fwd").addEventListener("click", () => mover(10));
-$("#rp-loop").addEventListener("click", () => { audio.loop = !audio.loop; barra(); });
-$("#rp-a").addEventListener("click", () => { A = audio.currentTime; if (B !== null && B <= A) B = null; barra(); });
-$("#rp-b").addEventListener("click", () => {
-  if (A === null) A = Math.max(0, audio.currentTime - 8);
-  if (audio.currentTime > A + 0.5) { B = audio.currentTime; audio.currentTime = A; if (audio.paused) audio.play().catch(() => {}); }
-  barra();
-});
-$("#rp-clr").addEventListener("click", () => { A = B = null; barra(); });
 
 /* la cuenta */
 const code = "HB-" + Math.random().toString(36).slice(2, 7).toUpperCase();
