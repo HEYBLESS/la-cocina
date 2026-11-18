@@ -1,0 +1,232 @@
+{
+ "actualizado": "2026-11-18T01:46:01.231Z",
+ "precio": 15,
+ "total": 27,
+ "quedan": 27,
+ "terminos": [
+  "Los beats del Remate del Chef se venden en calidad de productor fantasma: puedes lanzar y registrar la canción como tuya sin dar créditos a HEY BLESS!.",
+  "HEY BLESS! no reclama créditos, regalías, splits ni Content ID sobre la canción.",
+  "Venta exclusiva: el beat se retira de la venta y no se vuelve a vender.",
+  "Se entrega solo el WAV sin tag. No incluye stems ni licencia firmada; tu comprobante de pago y este correo son tu constancia de compra.",
+  "No se permite revender ni redistribuir el beat como instrumental.",
+  "Por ser un producto digital, no hay devoluciones después de la entrega."
+ ],
+ "beats": [
+  {
+   "id": "bachaton-81bpm",
+   "nombre": "Bachaton",
+   "bpm": 81,
+   "genero": "",
+   "audio": "audio/remate/bachaton-81bpm.mp3",
+   "pid": "1zCk2nQi1w13GfM5neqzhiIQf39EWi4E-"
+  },
+  {
+   "id": "bailame-85bpm",
+   "nombre": "Bailame",
+   "bpm": 85,
+   "genero": "",
+   "audio": "audio/remate/bailame-85bpm.mp3",
+   "pid": "1gihP3tX1D0O2igW_su-oDKpf1dEgAtbG"
+  },
+  {
+   "id": "battle-royal-120bpm",
+   "nombre": "Battle Royal",
+   "bpm": 120,
+   "genero": "",
+   "audio": "audio/remate/battle-royal-120bpm.mp3",
+   "pid": "1aW13GDGs9tyFHIEjudjP5_oTNTJKu8uc"
+  },
+  {
+   "id": "coco-122bpm",
+   "nombre": "Coco",
+   "bpm": 122,
+   "genero": "",
+   "audio": "audio/remate/coco-122bpm.mp3",
+   "pid": "1OcaY3JRymLWOppeJZmRuV5fGM5TY7GjX"
+  },
+  {
+   "id": "como-hector-100bpm",
+   "nombre": "Como Hector",
+   "bpm": 100,
+   "genero": "",
+   "audio": "audio/remate/como-hector-100bpm.mp3",
+   "pid": "1EgwQG5jvrEmcX_7LbFggVQe9SliYKJm5"
+  },
+  {
+   "id": "d-noche-94bpm",
+   "nombre": "D Noche",
+   "bpm": 94,
+   "genero": "",
+   "audio": "audio/remate/d-noche-94bpm.mp3",
+   "pid": "10iD9ariaLIWhWfM4ymE7vdY68Y9t0_9e"
+  },
+  {
+   "id": "data-107bpm",
+   "nombre": "Data",
+   "bpm": 107,
+   "genero": "",
+   "audio": "audio/remate/data-107bpm.mp3",
+   "pid": "1yHGy6gTzHpAsAc_Ury7W3XXIu27BQuLI"
+  },
+  {
+   "id": "desde-hace-rato-101bpm",
+   "nombre": "Desde Hace Rato",
+   "bpm": 101,
+   "genero": "",
+   "audio": "audio/remate/desde-hace-rato-101bpm.mp3",
+   "pid": "1IfSBDwykoepZRCddwfiDQzWSFAcmbakB"
+  },
+  {
+   "id": "deseandote-88bpm",
+   "nombre": "Deseandote",
+   "bpm": 88,
+   "genero": "",
+   "audio": "audio/remate/deseandote-88bpm.mp3",
+   "pid": "1WCFBlHypNF61y-IGZ36YisTUsqll6jVK"
+  },
+  {
+   "id": "divino-190bpm",
+   "nombre": "Divino",
+   "bpm": 190,
+   "genero": "",
+   "audio": "audio/remate/divino-190bpm.mp3",
+   "pid": "1a9OIADMzCJITxK87eXVuVxrJmKM_v_Ug"
+  },
+  {
+   "id": "dosis-92-bpm",
+   "nombre": "Dosis",
+   "bpm": 92,
+   "genero": "",
+   "audio": "audio/remate/dosis-92-bpm.mp3",
+   "pid": "1DMcMuz2TpO9lbMj97d5aeKrBOUezK5nL"
+  },
+  {
+   "id": "duro-109bpm",
+   "nombre": "Duro",
+   "bpm": 109,
+   "genero": "",
+   "audio": "audio/remate/duro-109bpm.mp3",
+   "pid": "1tb0Fg5Ursd9EvY1-Po7x0fWgQ5CsjkmA"
+  },
+  {
+   "id": "elektrica-112bpm",
+   "nombre": "Elektrica",
+   "bpm": 112,
+   "genero": "",
+   "audio": "audio/remate/elektrica-112bpm.mp3",
+   "pid": "1rtRTsavQE-Y7FKQrNc3ayQrm1OkZZCNs"
+  },
+  {
+   "id": "enemy-134bpm",
+   "nombre": "Enemy",
+   "bpm": 134,
+   "genero": "",
+   "audio": "audio/remate/enemy-134bpm.mp3",
+   "pid": "1nAV74whFaXHFUWRzLpN4zWrZ_jRGvIbN"
+  },
+  {
+   "id": "ferragamo-100bpm",
+   "nombre": "Ferragamo",
+   "bpm": 100,
+   "genero": "",
+   "audio": "audio/remate/ferragamo-100bpm.mp3",
+   "pid": "1HNpMmzzsZx0SbhA8bErL8mWJE75aE6Ul"
+  },
+  {
+   "id": "g-wa-100bpm",
+   "nombre": "G-Wa",
+   "bpm": 100,
+   "genero": "",
+   "audio": "audio/remate/g-wa-100bpm.mp3",
+   "pid": "1dJsS1MCp9T8LaLM-nA5g9tmIcG7nYy85"
+  },
+  {
+   "id": "gatita-99bpm",
+   "nombre": "Gatita",
+   "bpm": 99,
+   "genero": "",
+   "audio": "audio/remate/gatita-99bpm.mp3",
+   "pid": "1mm_YbcvgHuWnSISKC2a9xgvfzE0JYgmz"
+  },
+  {
+   "id": "mandelao-170bpm",
+   "nombre": "Mandelão",
+   "bpm": 170,
+   "genero": "",
+   "audio": "audio/remate/mandelao-170bpm.mp3",
+   "pid": "1EhoAElCaZu1Uf46t3LhZCzY4fjQbXf8e"
+  },
+  {
+   "id": "me-sigues-95bpm",
+   "nombre": "Me Sigues",
+   "bpm": 95,
+   "genero": "",
+   "audio": "audio/remate/me-sigues-95bpm.mp3",
+   "pid": "1St84FW3IuyserVwKejY95SlgTCYDt8Ut"
+  },
+  {
+   "id": "nuestras-fotos-98bpm",
+   "nombre": "Nuestras Fotos",
+   "bpm": 98,
+   "genero": "",
+   "audio": "audio/remate/nuestras-fotos-98bpm.mp3",
+   "pid": "1TqTL1HPtIoZIQjzExAAfwTTiS2WAKo5c"
+  },
+  {
+   "id": "on-my-wayyy-90-bpm",
+   "nombre": "On My Wayyy",
+   "bpm": 90,
+   "genero": "",
+   "audio": "audio/remate/on-my-wayyy-90-bpm.mp3",
+   "pid": "16o96OVdKcya3_DYqLM8MAUXwY1mb21W4"
+  },
+  {
+   "id": "perreoski-99bpm",
+   "nombre": "Perreoski",
+   "bpm": 99,
+   "genero": "",
+   "audio": "audio/remate/perreoski-99bpm.mp3",
+   "pid": "1NuusR_tx3uZhPdabtBHfGqLoLFgvgTVY"
+  },
+  {
+   "id": "petite-102bpm",
+   "nombre": "Petite'",
+   "bpm": 102,
+   "genero": "",
+   "audio": "audio/remate/petite-102bpm.mp3",
+   "pid": "1IpsnacAzpEBkey73nhDUQp-SOoPd6Dgr"
+  },
+  {
+   "id": "playa-sad-98bpm",
+   "nombre": "Playa Sad",
+   "bpm": 98,
+   "genero": "",
+   "audio": "audio/remate/playa-sad-98bpm.mp3",
+   "pid": "1XUA-AOtxZMB64BCSFVIZX1YqxMxymfA2"
+  },
+  {
+   "id": "soul-173-bpm",
+   "nombre": "Soul",
+   "bpm": 173,
+   "genero": "",
+   "audio": "audio/remate/soul-173-bpm.mp3",
+   "pid": "1fwUZLghg-88bNCzOwBtABqyhNeuu-F5P"
+  },
+  {
+   "id": "type-shi-130bpm",
+   "nombre": "Type Shi",
+   "bpm": 130,
+   "genero": "",
+   "audio": "audio/remate/type-shi-130bpm.mp3",
+   "pid": "1X7LsRuYyOo5-TuJ6EVPON_0fSn84jUOT"
+  },
+  {
+   "id": "vamo-a-matarno-94bpm",
+   "nombre": "Vamo A Matarno",
+   "bpm": 94,
+   "genero": "",
+   "audio": "audio/remate/vamo-a-matarno-94bpm.mp3",
+   "pid": "15VS5LVYusiAyhlgApOptYZkmW7opyUFO"
+  }
+ ]
+}
