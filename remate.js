@@ -34,7 +34,11 @@ if (WA) $("#wa").href = WA + "?text=" + encodeURIComponent("Hola HEY BLESS! Quie
 let PRECIO = 15, BEATS = [], TOTAL = 0;
 async function cargar() {
   try {
-    const j = await fetch(C.backend + "?remate=1&t=" + Date.now()).then(r => r.json());
+    // 1) copia rápida en la propia página (se sincroniza sola desde Drive)
+    let j = await fetch("data/remate.json?t=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
+    if (j && j.beats && j.beats.length) j.ok = true;
+    // 2) respaldo: directo desde Drive
+    else j = await fetch(C.backend + "?remate=1&t=" + Date.now()).then(r => r.json());
     if (!j || !j.ok) throw 0;
     PRECIO = +j.precio || 15; BEATS = j.beats || []; TOTAL = +j.total || BEATS.length;
     if (j.terminos && j.terminos.length) $("#tlist").innerHTML = j.terminos.map(t => `<li>${esc(t)}</li>`).join("");
