@@ -124,6 +124,7 @@ $("#rp-play").addEventListener("click", () => playing && toggle(playing));
 /* la cuenta */
 const code = "HB-" + Math.random().toString(36).slice(2, 7).toUpperCase();
 function abrirCuenta() {
+  t0 = Date.now();
   if (!sel.size) { $("#err").textContent = "Agrega al menos un beat"; return; }
   const n = sel.size, p = pagar(n), t = ppTotal(p), names = BEATS.filter(b => sel.has(b.id)).map(b => b.nombre);
   $("#sum").innerHTML = names.map(esc).join(" · ") + `<br>${n} beat${n > 1 ? "s" : ""}${Math.floor(n / 4) ? " · " + Math.floor(n / 4) + " gratis" : ""} · ${usd(p)}`;
@@ -140,18 +141,24 @@ function datos() {
   if (!$("#fterm").checked) return "Acepta los términos del remate";
   return "";
 }
+let t0 = Date.now(), ultimoPedido = 0;
+const publico = m => (m && m.length < 160 && !/exception|error:|typeerror|referenceerror|\.gs|line \d|línea \d|script\.google|stack|undefined|null/i.test(m)) ? m : "";
 async function enviar() {
   const e = datos(); if (e) { $("#err2").textContent = e; return; }
+  if (Date.now() - ultimoPedido < 30000) { $("#err2").textContent = "Espera unos segundos antes de reenviar"; return; }
+  const hp = $("#fweb").value, ms = Date.now() - t0;
+  if (hp) { $("#pay").hidden = true; $("#done").hidden = false; return; }   // bot: no se manda nada
+  ultimoPedido = Date.now();
   const btn = $("#sent"); btn.disabled = true; btn.textContent = "Enviando…"; $("#err2").textContent = "";
   try {
     const r = await fetch(C.backend, { method: "POST", body: JSON.stringify({ action: "pedido", tipo: "remate", ids: [...sel],
-      nombre: $("#fn").value.trim(), artista: $("#fa").value.trim(), correo: $("#fe").value.trim(), code, terminos: true }) }).then(r => r.json());
+      nombre: $("#fn").value.trim(), artista: $("#fa").value.trim(), correo: $("#fe").value.trim(), code, terminos: true, hp, ms }) }).then(r => r.json());
     if (!r.ok) throw new Error(r.error || "");
     $("#pay").hidden = true; $("#done").hidden = false; if (window.hbToast) hbToast("Pedido enviado a la cocina");
     $("#donemsg").innerHTML = `Gracias, <b style="font-weight:400">${esc($("#fn").value.trim())}</b>. Tu pedido <b style="font-weight:400">${esc(code)}</b> está en la cocina.<br>Apenas confirme tu pago en PayPal, tus WAV sin tag te llegan a <b style="font-weight:400">${esc($("#fe").value.trim())}</b>. Revisa también la carpeta de spam.`;
   } catch (err) {
-    $("#err2").textContent = (err && err.message) || "No se pudo enviar el pedido. Inténtalo de nuevo o escríbeme por Instagram.";
-    btn.disabled = false; btn.textContent = "2 · Ya pagué, enviar pedido";
+    $("#err2").textContent = publico(err && err.message) || "No se pudo enviar el pedido. Inténtalo de nuevo o escríbeme por Instagram.";
+    ultimoPedido = 0; btn.disabled = false; btn.textContent = "2 · Ya pagué, enviar pedido";
     if (err && /vendió|ya no está/.test(err.message)) cargar();
   }
 }

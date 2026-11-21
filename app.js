@@ -341,7 +341,7 @@ function stepPay() {
       regaloId: reg ? reg.id : "", regaloNombre: reg ? reg.nombre : "" };
   }
   const it = M.item, t = ppTotal(it.precio), fee = +(t - it.precio).toFixed(2);
-  M.code = newCode();
+  M.code = newCode(); M.t0 = Date.now();
   $("#sheet").innerHTML = `${X}
     <div class="caps">Tu pedido</div>
     <h2 style="font-weight:900;font-size:22px;text-transform:uppercase;margin:6px 0 18px">${esc(it.titulo)}</h2>
@@ -349,6 +349,7 @@ function stepPay() {
       <div>
         <label class="field"><span>Tu nombre completo</span><input id="f-nombre" autocomplete="name" value="${esc(M.nombre)}" placeholder="Ej. Juan Pérez"></label>
         <label class="field"><span>Nombre artístico (opcional)</span><input id="f-artista" value="${esc(M.artista)}" placeholder="Ej. J. Flow"></label>
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><label>No llenes este campo <input id="f-web" tabindex="-1" autocomplete="off"></label></div>
         <label class="field"><span>Correo para recibir tus archivos</span><input id="f-correo" type="email" autocomplete="email" value="${esc(M.correo)}" placeholder="tucorreo@gmail.com"></label>
         <p class="note">${it.tipo === "beat" ? "Tu licencia en PDF sale con este nombre. " : ""}A este correo te llegan tus archivos. Revisa también la carpeta de spam.</p>
       </div>
@@ -383,6 +384,11 @@ function validBuyer() {
   return ok;
 }
 const newCode = () => "HB-" + Math.random().toString(36).slice(2, 7).toUpperCase();
+// anti-bots: campo trampa (hp) y tiempo en el formulario (ms); el servidor debe rechazar si hp viene lleno o ms < 3000
+const antibot = () => ({ hp: ($("#f-web") || {}).value || "", ms: Date.now() - (M.t0 || Date.now()) });
+// nunca enseñar al público errores técnicos del servidor
+const publico = m => (m && m.length < 160 && !/exception|error:|typeerror|referenceerror|\.gs|line \d|línea \d|script\.google|stack|undefined|null/i.test(m)) ? m : "";
+let ultimoPedido = 0;
 async function api(data) { const r = await fetch(C.backend, { method: "POST", body: JSON.stringify(data) }); return r.json(); }
 
 let ppLoading = null;
@@ -412,7 +418,7 @@ async function mountPayPal() {
       stepWait("Verificando tu pago…");
       try {
         await actions.order.capture();
-        const res = await api({ action: "paypal", orderId: d.orderID, nombre: M.nombre, artista: M.artista, correo: M.correo });
+        const res = await api({ action: "paypal", orderId: d.orderID, nombre: M.nombre, artista: M.artista, correo: M.correo, ...antibot() });
         res.ok ? stepDone(res, code) : stepError(res.error);
       } catch (e) { stepError(); }
     },
@@ -445,6 +451,7 @@ function stepSent() {
     ${stemsBlock(M.code)}</div>`;
 }
 function stepError(msg) {
+  msg = publico(msg); ultimoPedido = 0;
   $("#sheet").innerHTML = `${X}<div class="done"><div class="title">Ups…</div>
     <p style="margin:10px 0 16px">${esc(msg || "Hubo un problema al confirmar tu pedido.")} Si se hizo el cobro, escríbeme por Instagram y lo resolvemos al toque.</p>
     ${igPill("Escribir por IG")}</div>`;
@@ -483,8 +490,12 @@ document.addEventListener("click", e => {
   else if (d.paidOpen !== undefined) { if (!validBuyer()) e.preventDefault(); }
   else if (d.confirm !== undefined) {
     if (!validBuyer()) return;
+    if (Date.now() - ultimoPedido < 30000) { toast("Espera unos segundos antes de reenviar"); return; }
+    const ab = antibot();
+    if (ab.hp) { stepSent(); return; }   // es un bot: se le muestra "enviado" pero no se manda nada
+    ultimoPedido = Date.now();
     stepWait("Enviando tu pedido…");
-    api({ action: "pedido", tipo: M.item.tipo, id: M.item.id, licId: M.item.licId || "", regaloId: M.item.regaloId || "", nombre: M.nombre, artista: M.artista, correo: M.correo, code: M.code })
+    api({ action: "pedido", tipo: M.item.tipo, id: M.item.id, licId: M.item.licId || "", regaloId: M.item.regaloId || "", nombre: M.nombre, artista: M.artista, correo: M.correo, code: M.code, ...ab })
       .then(r => r.ok ? stepSent() : stepError(r.error)).catch(() => stepError());
   }
   else if (d.close !== undefined) closeBuy();

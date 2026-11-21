@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-hKwjqKKO4Ojd3++mbRgRwm4qcqVYV7Xxy5NjWGaQfZw=' 'sha256-roAzE7dXqi8OWHGPnlmwCq3VfcWhbrLhNgdGXlYwv4Y=' https://www.paypal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https://drive.google.com https://*.googleusercontent.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://open.er-api.com https://*.paypal.com; frame-src https://*.paypal.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Aprobar pedido · La Cocina</title>
@@ -24,13 +26,25 @@
 <script>
 (function () {
   var token = decodeURIComponent(location.hash.slice(1));
+  // quita el código secreto de la barra de direcciones y del historial
+  if (token) history.replaceState(null, "", location.pathname);
+  // solo deja pasar negritas, saltos y párrafos en la respuesta del servidor
+  function limpio(html) {
+    var d = new DOMParser().parseFromString("<div>" + html + "</div>", "text/html").body.firstChild, out = document.createElement("div");
+    (function copiar(src, dst) { src.childNodes.forEach(function (n) {
+      if (n.nodeType === 3) dst.appendChild(document.createTextNode(n.textContent));
+      else if (n.nodeType === 1 && /^(B|STRONG|BR|P|I|EM)$/.test(n.tagName)) { var e = document.createElement(n.tagName); dst.appendChild(e); copiar(n, e); }
+      else if (n.nodeType === 1) copiar(n, dst);
+    }); })(d, out);
+    return out;
+  }
   var msg = document.getElementById("msg"), go = document.getElementById("go"), spin = document.getElementById("spin");
   if (!token || !window.CONFIG || !CONFIG.backend) { msg.textContent = "Enlace inválido."; go.style.display = "none"; return; }
   go.onclick = function () {
     go.style.display = "none"; spin.style.display = "block"; msg.textContent = "Enviando archivos y licencia…";
     fetch(CONFIG.backend, { method: "POST", body: JSON.stringify({ action: "aprobar", token: token }) })
       .then(function (r) { return r.json(); })
-      .then(function (r) { spin.style.display = "none"; msg.innerHTML = r.html || (r.ok ? "Listo." : "No se pudo aprobar."); })
+      .then(function (r) { spin.style.display = "none"; msg.textContent = ""; if (r.html) msg.appendChild(limpio(r.html)); else msg.textContent = r.ok ? "Listo." : "No se pudo aprobar."; })
       .catch(function () { spin.style.display = "none"; msg.textContent = "Error de conexión. Intenta de nuevo."; go.style.display = ""; });
   };
 })();
