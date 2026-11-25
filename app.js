@@ -2,7 +2,8 @@
    Los datos se leen de data/tienda.json, data/beats.json y data/kits.json (se editan en Pages CMS) */
 (async () => {
 const loadJSON = p => fetch(p + "?v=" + Date.now(), { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
-const [TIENDA, BEATS_JSON, KITS_JSON] = await Promise.all([loadJSON("data/tienda.json"), loadJSON("data/beats.json"), loadJSON("data/kits.json")]);
+const [TIENDA, BEATS_JSON, KITS_JSON, REM_JSON] = await Promise.all([loadJSON("data/tienda.json"), loadJSON("data/beats.json"), loadJSON("data/kits.json"), loadJSON("data/remate.json")]);
+const REMATE = ((REM_JSON && REM_JSON.beats) || []).filter(x => x && x.id && x.nombre);   // el regalo del 2x1 sale solo del Remate del Chef
 const T = TIENDA || {};
 const slug = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const asset = p => { if (!p) return ""; p = String(p).replace(/^\/+/, ""); if (/^https?:/i.test(p)) return p; try { return encodeURI(decodeURI(p)); } catch { return encodeURI(p); } };
@@ -324,9 +325,9 @@ function stepPick() {
         <div class="ln"><span>${esc(l.nombre)}</span><b>${usd(l.precio)}</b></div>
         <div class="ln sub"><span>Entrega</span><span>${l.archivos.map(a => a.toUpperCase()).join(" + ")} al instante${l.stems ? " · stems por IG" : ""}</span></div>
         <div class="ln sub"><span>Licencia</span><span>PDF a tu nombre</span></div>
-        ${PROMO && l.exclusiva ? `<div class="gift"><div class="caps blk">🎁 ${esc(PROMO.titulo)}</div>
-          <p>${esc(PROMO.lema)} Elige tu beat de regalo:</p>
-          <select id="f-regalo"><option value="">— Elige un beat —</option>${BEATS.filter(x => x.id !== b.id).map(x => `<option value="${esc(x.id)}"${x.id === M.regalo ? " selected" : ""}>${esc(x.nombre)}</option>`).join("")}</select></div>` : ""}
+        ${PROMO && l.exclusiva && REMATE.length ? `<div class="gift"><div class="caps blk">🎁 ${esc(PROMO.titulo)}</div>
+          <p>${esc(PROMO.lema)} Elige tu beat de regalo del <a href="remate.html" target="_blank" rel="noopener">Remate del Chef</a> (WAV sin tag, venta como productor fantasma):</p>
+          <select id="f-regalo"><option value="">— Elige un beat del Remate —</option>${REMATE.map(x => `<option value="${esc(x.id)}"${x.id === M.regalo ? " selected" : ""}>${esc(x.nombre)}${x.bpm ? " · " + esc(x.bpm) + " BPM" : ""}</option>`).join("")}</select></div>` : ""}
         <button class="btn" style="width:100%;margin-top:16px" data-go="pay">Continuar</button>
       </div>
     </div>`}`;
@@ -336,7 +337,7 @@ function stepPick() {
 function stepPay() {
   if (M.beat && (!M.item || M.item.tipo === "beat")) {
     const b = M.beat, l = M.lic;
-    const reg = PROMO && l.exclusiva ? BEATS.find(x => x.id === M.regalo) : null;
+    const reg = PROMO && l.exclusiva ? REMATE.find(x => x.id === M.regalo) : null;
     M.item = { tipo: "beat", id: b.id, nombre: b.nombre, titulo: `${b.nombre}${reg ? " + " + reg.nombre : ""} — ${l.nombre}`, precio: l.precio, licId: l.id, stems: !!l.stems, licNombre: l.nombre,
       regaloId: reg ? reg.id : "", regaloNombre: reg ? reg.nombre : "" };
   }
