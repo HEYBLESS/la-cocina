@@ -3,7 +3,7 @@
     "activa": true,
     "titulo": "2x1 en Exclusivas",
     "lema": "Pide una exclusiva y el segundo plato va por cuenta de la casa.",
-    "detalle": "Compra la Licencia Exclusiva de un beat y elige otro beat del catálogo, también en exclusiva, gratis."
+    "detalle": "Compra la Licencia Exclusiva de un beat y elige de regalo un beat del Remate del Chef (WAV sin tag, venta como productor fantasma)."
   },
   "licencias": [
     {
@@ -233,7 +233,7 @@
     },
     {
       "pregunta": "¿Cómo funciona el 2x1 en exclusivas?",
-      "respuesta": "Al elegir la Licencia Exclusiva de un beat, eliges otro beat del catálogo de regalo. Recibes los dos en exclusiva, cada uno con su licencia a tu nombre, y ambos salen del catálogo."
+      "respuesta": "Al elegir la Licencia Exclusiva de un beat, eliges de regalo un beat del Remate del Chef. El beat que pagas llega con su licencia exclusiva a tu nombre; el de regalo llega en WAV sin tag con las condiciones del Remate (venta como productor fantasma, sin licencia firmada). Ambos dejan de estar a la venta."
     },
     {
       "pregunta": "¿Y los stems?",
